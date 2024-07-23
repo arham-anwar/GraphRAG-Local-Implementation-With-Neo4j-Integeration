@@ -1,0 +1,723 @@
+2024-07-23 07:54:45.695+0000 INFO  [o.n.g.f.m.GlobalModule] Logging config in use: File '/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/conf/server-logs.xml'
+2024-07-23 07:54:45.831+0000 WARN  [o.n.k.i.JvmChecker] You are using an unsupported version of the Java runtime. Please use Java(TM) 17 or Java(TM) 21 to run Neo4j.
+2024-07-23 07:54:45.832+0000 WARN  [o.n.k.i.JvmChecker] The max heap memory has not been configured. It is recommended that it is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 2147483648 bytes is used instead. If you are running neo4j server, you need to configure server.memory.heap.max_size in neo4j.conf. If you are running neo4j embedded, you have to launch the JVM with -Xmx set to a value. You can run neo4j-admin server memory-recommendation for memory configuration suggestions.
+2024-07-23 07:54:45.832+0000 WARN  [o.n.k.i.JvmChecker] The initial heap memory has not been configured. It is recommended that it is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 134217728 bytes is used instead. If you are running neo4j server, you need to configure server.memory.heap.initial_size in neo4j.conf. If you are running neo4j embedded, you have to launch the JVM with -Xms set to a value. You can run neo4j-admin server memory-recommendation for memory configuration suggestions.
+2024-07-23 07:54:45.924+0000 WARN  [o.n.i.p.PageCache] The server.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 3221225472 bytes will be used instead. Run `neo4j-admin memory-recommendation` for memory configuration suggestions.
+2024-07-23 07:54:46.249+0000 INFO  [o.n.i.d.DiagnosticsManager] 
+                                                                ********************************************************************************
+                                                                                             [ System diagnostics ]                             
+                                                                ********************************************************************************
+                                                                --------------------------------------------------------------------------------
+                                                                                         [ System memory information ]                          
+                                                                --------------------------------------------------------------------------------
+                                                                Total Physical memory: 8.000GiB
+                                                                Free Physical memory: 225.0MiB
+                                                                Committed virtual memory: 393.7GiB
+                                                                Total swap space: 6.000GiB
+                                                                Free swap space: 1.179GiB
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                           [ JVM memory information ]                           
+                                                                --------------------------------------------------------------------------------
+                                                                Free  memory: 68.73MiB
+                                                                Total memory: 107.0MiB
+                                                                Max   memory: 2.000GiB
+                                                                Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+                                                                Garbage Collector: G1 Concurrent GC: [G1 Old Gen]
+                                                                Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+                                                                Memory Pool: CodeHeap 'non-nmethods' (Non-heap memory): committed=2.438MiB, used=1.417MiB, max=5.578MiB, threshold=0B
+                                                                Memory Pool: Metaspace (Non-heap memory): committed=22.44MiB, used=22.08MiB, max=-1B, threshold=0B
+                                                                Memory Pool: CodeHeap 'profiled nmethods' (Non-heap memory): committed=6.563MiB, used=6.533MiB, max=117.2MiB, threshold=0B
+                                                                Memory Pool: Compressed Class Space (Non-heap memory): committed=2.563MiB, used=2.388MiB, max=1.000GiB, threshold=0B
+                                                                Memory Pool: G1 Eden Space (Heap memory): committed=63.00MiB, used=7.000MiB, max=-1B, threshold=?
+                                                                Memory Pool: G1 Old Gen (Heap memory): committed=43.00MiB, used=29.77MiB, max=2.000GiB, threshold=0B
+                                                                Memory Pool: G1 Survivor Space (Heap memory): committed=1.000MiB, used=1.000MiB, max=-1B, threshold=?
+                                                                Memory Pool: CodeHeap 'non-profiled nmethods' (Non-heap memory): committed=2.438MiB, used=1.564MiB, max=117.2MiB, threshold=0B
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                        [ Operating system information ]                        
+                                                                --------------------------------------------------------------------------------
+                                                                Operating System: Mac OS X; version: 14.0; arch: aarch64; cpus: 8
+                                                                Max number of file descriptors: 10240
+                                                                Number of open file descriptors: 245
+                                                                Process id: 37606
+                                                                Byte order: LITTLE_ENDIAN
+                                                                Local timezone: America/Toronto
+                                                                Memory page size: 16384
+                                                                Unaligned memory access allowed: true
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                              [ JVM information ]                               
+                                                                --------------------------------------------------------------------------------
+                                                                VM Name: Java HotSpot(TM) 64-Bit Server VM
+                                                                VM Vendor: Oracle Corporation
+                                                                VM Version: 22.0.2+9-70
+                                                                JIT compiler: HotSpot 64-Bit Tiered Compilers
+                                                                VM Arguments: [-XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -Djdk.nio.maxCachedBufferSize=1024, -Dio.netty.tryReflectionSetAccessible=true, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -XX:FlightRecorderOptions=stackdepth=256, -XX:+UnlockDiagnosticVMOptions, -XX:+DebugNonSafepoints, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.base/java.io=ALL-UNNAMED, --add-opens=java.base/sun.nio.ch=ALL-UNNAMED, -Dlog4j2.disable.jmx=true, -Dfile.encoding=UTF-8]
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                               [ Java classpath ]                               
+                                                                --------------------------------------------------------------------------------
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/FastInfoset-1.2.16.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-gql-status-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-resource-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-tcnative-2.0.65.Final-linux-aarch_64-fedora.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-tcnative-2.0.65.Final-linux-x86_64-fedora.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-buffer-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/log4j-core-2.20.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-wal-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/javassist-3.25.0-GA.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-crypto-cipher-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-exceptions-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/proto-google-common-protos-2.38.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-v5-parser-listener-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/kiama_2.13-2.5.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-interpreted-runtime-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/commons-codec-1.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-ast-factory-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/arrow-memory-core-16.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/perfmark-api-0.26.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/hk2-api-2.6.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/arrow-vector-16.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/antlr4-runtime-4.13.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-cache-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jersey-server-2.34.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-stub-1.63.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jakarta.inject-2.6.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-core-1.63.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-tcnative-2.0.65.Final-linux-aarch_64.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jackson-jaxrs-base-2.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-webapp-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-server-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/eclipse-collections-api-11.1.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/flight-core-16.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/http2-hpack-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-token-api-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/failureaccess-1.0.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-alpn-java-server-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-handler-proxy-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-runtime-util-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jProcesses-1.6.5.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-shell-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jline-terminal-jansi-3.21.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-security-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jettison-1.5.4.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-config-core-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-util-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/argparse4j-0.9.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-classes-kqueue-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-protobuf-1.63.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-v5-antlr-parser-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-io-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/guava-33.2.0-jre.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/picocli-4.7.5.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-hashes-bcrypt-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-index-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/WMI4Java-1.6.3.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jersey-client-2.34.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-dsl-2023.9.7.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/commons-logging-1.3.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-ast-factory-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-codec-socks-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-schema-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-common-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/stax-ex-1.8.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-hashes-argon2-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-udc-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/log4j-api-2.20.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-native-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-parser-common-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/annotations-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/log4j-layout-template-json-2.20.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/scala-collection-contrib_2.13-0.3.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/caffeine-3.1.8.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/commons-configuration2-2.10.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-data-collector-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-handler-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/lucene-analysis-common-9.10.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/protobuf-java-util-3.25.3.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-command-line-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jersey-container-servlet-2.34.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-v5-literal-interpreter-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-http-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/scala-library-2.13.11.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/hk2-utils-2.6.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jackson-core-2.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-browser-5.21.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jersey-hk2-2.34.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-crypto-core-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-v5-ast-factory-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-rewriting-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-antlr-common-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-collections-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-values-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/zstd-jni-1.5.6-3.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-kernel-api-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jakarta.activation-api-1.2.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-context-1.63.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jackson-datatype-jsr310-2.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-spatial-index-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-ssl-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-parser-ast-common-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-codec-http-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-io-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-alpn-server-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/arrow-memory-netty-buffer-patch-16.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-ir-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/protobuf-java-3.25.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cloud-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/commons-compress-1.26.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-notifications-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-fulltext-index-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-dbms-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/cypher-antlr-ast-common-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/arrow-memory-netty-16.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-query-router-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jna-5.14.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-planner-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/commons-io-2.16.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-codegen-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/http2-common-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-expression-evaluator-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-concurrent-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-protobuf-lite-1.62.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jsr305-3.0.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jakarta.annotation-api-1.3.5.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-config-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-graph-algo-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/conf/*
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/arrow-format-16.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/ipaddress-5.5.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-codec-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-security-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-xml-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/server-api-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/lucene-core-9.10.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/gson-2.10.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/zstd-proxy-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/commons-lang3-3.14.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jline-terminal-3.21.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-capabilities-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/flatbuffers-java-23.5.26.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-ast-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jaxb-runtime-2.3.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/hk2-locator-2.6.1.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-servlet-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/plugins/*
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jline-reader-3.21.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-import-tool-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-native-unix-common-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-record-storage-engine-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-lock-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-tcnative-2.0.65.Final-linux-x86_64.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jctools-core-4.0.3.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jPowerShell-3.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-slotted-runtime-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-logical-plans-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-lucene-index-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-id-generator-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/reactive-streams-1.0.4.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jackson-module-jaxb-annotations-2.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/txw2-2.3.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jansi-2.4.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-transport-classes-epoll-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-javacc-parser-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-common-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-diagnostics-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-netty-1.63.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-front-end-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-util-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jersey-container-servlet-core-2.34.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-util-1.62.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/slf4j-api-2.0.9.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jetty-servlet-api-4.0.6.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-bolt-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-kernel-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-resolver-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-procedure-api-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-csv-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-physical-planning-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-monitoring-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-lang-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-slf4j-provider-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jackson-databind-2.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-tcnative-classes-2.0.65.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-unsafe-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-expressions-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/istack-commons-runtime-3.0.8.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-layout-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-push-to-cloud-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/animal-sniffer-annotations-1.23.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-planner-spi-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jersey-common-2.34.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/grpc-api-1.63.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-fabric-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-java-driver-5.21.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/byte-buddy-1.14.14.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-storage-engine-util-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/commons-text-1.12.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jackson-jaxrs-json-provider-2.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/lucene-queryparser-9.10.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-configuration-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-cache-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/netty-codec-http2-4.1.110.Final.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/reactor-core-3.6.6.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-consistency-check-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/scala-reflect-2.13.11.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-logging-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jakarta.validation-api-2.0.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/eclipse-collections-11.1.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-macros-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jakarta.xml.bind-api-2.3.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-crypto-hash-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-bootcheck-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/magnolia_2.13-1.1.8.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-event-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-server-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-cypher-rendering-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-graphdb-api-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-procedure-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/http2-server-10.0.20.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/shiro-core-2.0.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jackson-annotations-2.17.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/neo4j-import-util-5.21.2.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/lucene-backward-codecs-9.10.0.jar
+                                                                 [classpath] /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib/jakarta.ws.rs-api-2.1.6.jar
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                [ Library path ]                                
+                                                                --------------------------------------------------------------------------------
+                                                                /Users/arham/Library/Java/Extensions
+                                                                /Library/Java/Extensions
+                                                                /Network/Library/Java/Extensions
+                                                                /System/Library/Java/Extensions
+                                                                /usr/lib/java
+                                                                /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                             [ System properties ]                              
+                                                                --------------------------------------------------------------------------------
+                                                                jdk.tls.rejectClientInitiatedRenegotiation = true
+                                                                sun.jnu.encoding = UTF-8
+                                                                sun.arch.data.model = 64
+                                                                user.timezone = America/Toronto
+                                                                sun.java.launcher = SUN_STANDARD
+                                                                user.country = CA
+                                                                sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib
+                                                                sun.java.command = org.neo4j.server.CommunityEntryPoint --home-dir=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2 --config-dir=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/conf
+                                                                http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+                                                                jdk.debug = release
+                                                                io.netty.tryReflectionSetAccessible = true
+                                                                sun.cpu.endian = little
+                                                                user.home = /Users/arham
+                                                                user.language = en
+                                                                file.separator = /
+                                                                apple.awt.application.name = CommunityEntryPoint
+                                                                jdk.tls.ephemeralDHKeySize = 2048
+                                                                sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+                                                                ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+                                                                user.name = arham
+                                                                stdout.encoding = UTF-8
+                                                                jdk.nio.maxCachedBufferSize = 1024
+                                                                path.separator = :
+                                                                file.encoding = UTF-8
+                                                                jnidispatch.path = /Users/arham/Library/Caches/JNA/temp/jna4482411058527281110.tmp
+                                                                jna.loaded = true
+                                                                user.dir = /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2
+                                                                native.encoding = UTF-8
+                                                                stderr.encoding = UTF-8
+                                                                sun.io.unicode.encoding = UnicodeBig
+                                                                log4j2.disable.jmx = true
+                                                                socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                      [ (IANA) TimeZone database version ]                      
+                                                                --------------------------------------------------------------------------------
+                                                                  TimeZone version: 2024a (available for 603 zone identifiers)
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                            [ Network information ]                             
+                                                                --------------------------------------------------------------------------------
+                                                                Interface utun4:
+                                                                    address: fe80:0:0:0:de3:85a7:c50c:1fdc%utun4
+                                                                Interface utun3:
+                                                                    address: fe80:0:0:0:8ea6:6bbf:16e4:6b71%utun3
+                                                                Interface utun2:
+                                                                    address: fe80:0:0:0:ce81:b1c:bd2c:69e%utun2
+                                                                Interface utun1:
+                                                                    address: fe80:0:0:0:7b1a:10ab:5250:4b30%utun1
+                                                                Interface utun0:
+                                                                    address: fe80:0:0:0:c35a:55c:c4d:fbd%utun0
+                                                                Interface llw0:
+                                                                    address: fe80:0:0:0:8063:27ff:fe6f:c304%llw0
+                                                                Interface awdl0:
+                                                                    address: fe80:0:0:0:8063:27ff:fe6f:c304%awdl0
+                                                                Interface ap1:
+                                                                    address: fe80:0:0:0:e435:d9ff:fe98:c7ef%ap1
+                                                                Interface en0:
+                                                                    address: fe80:0:0:0:141d:44fc:9cbc:e11c%en0
+                                                                    address: 192.168.2.14
+                                                                Interface lo0:
+                                                                    address: fe80:0:0:0:0:0:0:1%lo0
+                                                                    address: 0:0:0:0:0:0:0:1%lo0
+                                                                    address: 127.0.0.1
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                         [ Native access information ]                          
+                                                                --------------------------------------------------------------------------------
+                                                                Native access details: Native access is not available for current platform.
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                [ DBMS config ]                                 
+                                                                --------------------------------------------------------------------------------
+                                                                DBMS provided settings:
+                                                                db.tx_log.rotation.retention_policy=2 days 2G
+                                                                server.bolt.enabled=true
+                                                                server.directories.import=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/import
+                                                                server.directories.neo4j_home=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2
+                                                                server.http.enabled=true
+                                                                server.https.enabled=false
+                                                                server.jvm.additional=-XX:+UseG1GC
+-XX:-OmitStackTraceInFastThrow
+-XX:+AlwaysPreTouch
+-XX:+UnlockExperimentalVMOptions
+-XX:+TrustFinalNonStaticFields
+-XX:+DisableExplicitGC
+-Djdk.nio.maxCachedBufferSize=1024
+-Dio.netty.tryReflectionSetAccessible=true
+-Djdk.tls.ephemeralDHKeySize=2048
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-XX:FlightRecorderOptions=stackdepth=256
+-XX:+UnlockDiagnosticVMOptions
+-XX:+DebugNonSafepoints
+--add-opens=java.base/java.nio=ALL-UNNAMED
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/sun.nio.ch=ALL-UNNAMED
+-Dlog4j2.disable.jmx=true
+                                                                server.windows_service_name=neo4j
+                                                                Directories in use:
+                                                                server.directories.data=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data
+                                                                server.directories.dumps.root=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/dumps
+                                                                server.directories.import=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/import
+                                                                server.directories.lib=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/lib
+                                                                server.directories.licenses=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/licenses
+                                                                server.directories.logs=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/logs
+                                                                server.directories.plugins=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/plugins
+                                                                server.directories.run=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/run
+                                                                server.directories.script.root=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/scripts
+                                                                server.directories.transaction.logs.root=/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/transactions
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                 [ Packaging ]                                  
+                                                                --------------------------------------------------------------------------------
+                                                                Edition: Community
+                                                                Package Type: tar
+                                                                
+2024-07-23 07:54:46.272+0000 INFO  [o.n.d.i.DefaultIdentityModule] Generated new ServerId: ServerId{b7a1ca6c} (b7a1ca6c-eda2-490f-aa77-5d8ae4a5fcfa)
+2024-07-23 07:54:46.273+0000 INFO  [o.n.d.i.DefaultIdentityModule] This instance is ServerId{b7a1ca6c} (b7a1ca6c-eda2-490f-aa77-5d8ae4a5fcfa)
+2024-07-23 07:54:47.227+0000 INFO  [o.n.s.CommunityNeoWebServer] ======== Neo4j 5.21.2 ========
+2024-07-23 07:54:47.241+0000 INFO  [o.n.d.d.DatabaseLifecycles] Creating 'DatabaseId{00000000[system]}'.
+2024-07-23 07:54:47.661+0000 INFO  [o.n.b.BoltServer] Using connector transport KQueue
+2024-07-23 07:54:47.714+0000 INFO  [o.n.b.BoltServer] Configured external Bolt connector with listener address localhost/127.0.0.1:7687
+2024-07-23 07:54:47.715+0000 INFO  [o.n.b.BoltServer] Bolt server loaded
+2024-07-23 07:54:47.742+0000 INFO  [o.n.d.d.DatabaseLifecycles] Starting 'DatabaseId{00000000[system]}'.
+2024-07-23 07:54:48.325+0000 INFO  [o.n.i.d.DiagnosticsManager] [system/00000000] 
+                                                                [system/00000000] ********************************************************************************
+                                                                [system/00000000]                               [ Database: system ]                              
+                                                                [system/00000000] ********************************************************************************
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Version ]                                   
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] DBMS: community record-aligned-1.1
+                                                                [system/00000000] Kernel version: 5.21.2
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                 [ Store files ]                                 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] Disk space on partition (Total / Free / Free %): 245107195904 / 1923756032 / 0
+                                                                [system/00000000] Storage files stored on file store: apfs
+                                                                [system/00000000] Storage files: (filename : modification date - size)
+                                                                [system/00000000]   neostore: 2024-07-23 07:54:48.232+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.counts.db: 2024-07-23 07:54:48.250+0000 - 0B
+                                                                [system/00000000]   neostore.indexstats.db: 2024-07-23 07:54:48.263+0000 - 0B
+                                                                [system/00000000]   neostore.labeltokenstore.db: 2024-07-23 07:54:48.217+0000 - 0B
+                                                                [system/00000000]   neostore.labeltokenstore.db.id: 2024-07-23 07:54:48.217+0000 - 0B
+                                                                [system/00000000]   neostore.labeltokenstore.db.names: 2024-07-23 07:54:48.212+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db.names.id: 2024-07-23 07:54:48.212+0000 - 0B
+                                                                [system/00000000]   neostore.nodestore.db: 2024-07-23 07:54:48.181+0000 - 0B
+                                                                [system/00000000]   neostore.nodestore.db.id: 2024-07-23 07:54:48.180+0000 - 0B
+                                                                [system/00000000]   neostore.nodestore.db.labels: 2024-07-23 07:54:48.171+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.nodestore.db.labels.id: 2024-07-23 07:54:48.151+0000 - 0B
+                                                                [system/00000000]   neostore.propertystore.db: 2024-07-23 07:54:48.206+0000 - 0B
+                                                                [system/00000000]   neostore.propertystore.db.arrays: 2024-07-23 07:54:48.202+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.arrays.id: 2024-07-23 07:54:48.199+0000 - 0B
+                                                                [system/00000000]   neostore.propertystore.db.id: 2024-07-23 07:54:48.206+0000 - 0B
+                                                                [system/00000000]   neostore.propertystore.db.index: 2024-07-23 07:54:48.188+0000 - 0B
+                                                                [system/00000000]   neostore.propertystore.db.index.id: 2024-07-23 07:54:48.187+0000 - 0B
+                                                                [system/00000000]   neostore.propertystore.db.index.keys: 2024-07-23 07:54:48.183+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.index.keys.id: 2024-07-23 07:54:48.182+0000 - 0B
+                                                                [system/00000000]   neostore.propertystore.db.strings: 2024-07-23 07:54:48.195+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.strings.id: 2024-07-23 07:54:48.188+0000 - 0B
+                                                                [system/00000000]   neostore.relationshipgroupstore.db: 2024-07-23 07:54:48.224+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshipgroupstore.db.id: 2024-07-23 07:54:48.223+0000 - 0B
+                                                                [system/00000000]   neostore.relationshipgroupstore.degrees.db: 2024-07-23 07:54:48.258+0000 - 0B
+                                                                [system/00000000]   neostore.relationshipstore.db: 2024-07-23 07:54:48.208+0000 - 0B
+                                                                [system/00000000]   neostore.relationshipstore.db.id: 2024-07-23 07:54:48.207+0000 - 0B
+                                                                [system/00000000]   neostore.relationshiptypestore.db: 2024-07-23 07:54:48.211+0000 - 0B
+                                                                [system/00000000]   neostore.relationshiptypestore.db.id: 2024-07-23 07:54:48.211+0000 - 0B
+                                                                [system/00000000]   neostore.relationshiptypestore.db.names: 2024-07-23 07:54:48.208+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db.names.id: 2024-07-23 07:54:48.208+0000 - 0B
+                                                                [system/00000000]   neostore.schemastore.db: 2024-07-23 07:54:48.219+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.schemastore.db.id: 2024-07-23 07:54:48.218+0000 - 0B
+                                                                [system/00000000] Storage summary: 
+                                                                [system/00000000]   Total size of store: 72.00KiB
+                                                                [system/00000000]   Total size of mapped files: 72.00KiB
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                               [ Transaction log ]                               
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] Transaction log files stored on file store: apfs
+                                                                [system/00000000] Transaction log metadata:
+                                                                [system/00000000]  - current kernel version used in transactions: V5_20
+                                                                [system/00000000]  - last committed transaction id: 1
+                                                                [system/00000000] Transaction log files:
+                                                                [system/00000000]  - existing transaction log versions: -1--1
+                                                                [system/00000000]  - no transactions found
+                                                                [system/00000000] Checkpoint log files:
+                                                                [system/00000000]  - existing checkpoint log versions: -1--1
+                                                                [system/00000000]  - no checkpoints found
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Id usage ]                                  
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+                                                                [system/00000000] NodeStore[neostore.nodestore.db]: used=0 high=-1
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.index.keys]: used=1 high=0
+                                                                [system/00000000] PropertyIndexStore[neostore.propertystore.db.index]: used=0 high=-1
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.strings]: used=1 high=0
+                                                                [system/00000000] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+                                                                [system/00000000] PropertyStore[neostore.propertystore.db]: used=0 high=-1
+                                                                [system/00000000] RelationshipStore[neostore.relationshipstore.db]: used=0 high=-1
+                                                                [system/00000000] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=1 high=0
+                                                                [system/00000000] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=0 high=-1
+                                                                [system/00000000] StringPropertyStore[neostore.labeltokenstore.db.names]: used=1 high=0
+                                                                [system/00000000] LabelTokenStore[neostore.labeltokenstore.db]: used=0 high=-1
+                                                                [system/00000000] SchemaStore[neostore.schemastore.db]: used=1 high=0
+                                                                [system/00000000] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+                                                                [system/00000000] NeoStore[neostore]: used=-1 high=-1
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Metadata ]                                  
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] EXTERNAL_STORE_UUID (Database identifier exposed as external store identity. Generated on creation and never updated): aded2aad-3b0a-4137-ad49-8e98811ef2e7
+                                                                [system/00000000] DATABASE_ID (The last used DatabaseId for this database): null
+                                                                [system/00000000] LEGACY_STORE_VERSION (Legacy store format version. This field is used from 5.0 onwards only to distinguish non-migrated pre 5.0 metadata stores.): -3523014627327384477
+                                                                [system/00000000] STORE_ID (Store ID): StoreId{creationTime=1721721288229, random=5117837750614822273, storageEngineName='record', formatName='aligned', majorVersion=1, minorVersion=1}
+                                                                [system/00000000] 
+2024-07-23 07:54:48.339+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] Requirement `Database unavailable` makes database system unavailable.
+2024-07-23 07:54:48.339+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] DatabaseId{00000000[system]} is unavailable.
+2024-07-23 07:54:48.347+0000 WARN  [o.n.k.i.s.MetaDataStore] [system/00000000] Missing counts store, rebuilding it.
+2024-07-23 07:54:48.352+0000 WARN  [o.n.k.i.s.MetaDataStore] [system/00000000] Counts store rebuild completed.
+2024-07-23 07:54:48.365+0000 INFO  [o.n.k.d.Database] [system/00000000] Starting transaction log [/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/transactions/system/neostore.transaction.db.0] at version=0
+2024-07-23 07:54:48.372+0000 INFO  [o.n.k.d.Database] [system/00000000] Starting transaction log [/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/transactions/system/checkpoint.0] at version=0
+2024-07-23 07:54:48.374+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [system/00000000] Scanning log file with version 0 for checkpoint entries
+2024-07-23 07:54:48.380+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] Fulfilling of requirement 'Database unavailable' makes database system available.
+2024-07-23 07:54:48.380+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] DatabaseId{00000000[system]} is ready.
+2024-07-23 07:54:48.654+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index population started: [Index( id=2, name='index_f7700477', type='LOOKUP', schema=()-[:<any-types>]-(), indexProvider='token-lookup-1.0' )]
+2024-07-23 07:54:48.690+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index creation finished for index [Index( id=2, name='index_f7700477', type='LOOKUP', schema=()-[:<any-types>]-(), indexProvider='token-lookup-1.0' )].
+2024-07-23 07:54:48.697+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index population started: [Index( id=1, name='index_343aff4e', type='LOOKUP', schema=(:<any-labels>), indexProvider='token-lookup-1.0' )]
+2024-07-23 07:54:48.716+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index creation finished for index [Index( id=1, name='index_343aff4e', type='LOOKUP', schema=(:<any-labels>), indexProvider='token-lookup-1.0' )].
+2024-07-23 07:54:48.721+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [system/00000000] Checkpoint triggered by "Database init completed." @ txId: 3 checkpoint started...
+2024-07-23 07:54:48.879+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [system/00000000] Checkpoint triggered by "Database init completed." @ txId: 3 checkpoint completed in 156ms. Checkpoint flushed 74 pages (0% of total available pages), in 57 IOs. Checkpoint performed with IO limit: unlimited, paused in total 0 times( 0 millis).
+2024-07-23 07:54:48.881+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [system/00000000] No log version pruned. The strategy used was '2 days 2147483648 size'. 
+2024-07-23 07:54:48.952+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index population started: [Index( id=3, name='constraint_798238d6', type='RANGE', schema=(:DatabaseName {name, namespace}), indexProvider='range-1.0' )]
+2024-07-23 07:54:48.977+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index creation finished for index [Index( id=3, name='constraint_798238d6', type='RANGE', schema=(:DatabaseName {name, namespace}), indexProvider='range-1.0' )].
+2024-07-23 07:54:49.001+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index population started: [Index( id=4, name='constraint_8014b60a', type='RANGE', schema=(:Database {name}), indexProvider='range-1.0' )]
+2024-07-23 07:54:49.019+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index creation finished for index [Index( id=4, name='constraint_8014b60a', type='RANGE', schema=(:Database {name}), indexProvider='range-1.0' )].
+2024-07-23 07:54:49.044+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] Constraint Index( id=3, name='constraint_798238d6', type='RANGE', schema=(:Label[1] {PropertyKey[11], PropertyKey[12]}), indexProvider='range-1.0' ) is ONLINE.
+2024-07-23 07:54:49.044+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] Constraint Index( id=4, name='constraint_8014b60a', type='RANGE', schema=(:Label[2] {PropertyKey[11]}), indexProvider='range-1.0' ) is ONLINE.
+2024-07-23 07:54:49.196+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index population started: [Index( id=7, name='constraint_5789ae3', type='RANGE', schema=(:User {name}), indexProvider='range-1.0' )]
+2024-07-23 07:54:49.213+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index creation finished for index [Index( id=7, name='constraint_5789ae3', type='RANGE', schema=(:User {name}), indexProvider='range-1.0' )].
+2024-07-23 07:54:49.228+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index population started: [Index( id=8, name='constraint_74fad970', type='RANGE', schema=(:User {id}), indexProvider='range-1.0' )]
+2024-07-23 07:54:49.246+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index creation finished for index [Index( id=8, name='constraint_74fad970', type='RANGE', schema=(:User {id}), indexProvider='range-1.0' )].
+2024-07-23 07:54:49.262+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index population started: [Index( id=9, name='auth-constraint', type='RANGE', schema=(:Auth {provider, id}), indexProvider='range-1.0' )]
+2024-07-23 07:54:49.278+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [system/00000000] Index creation finished for index [Index( id=9, name='auth-constraint', type='RANGE', schema=(:Auth {provider, id}), indexProvider='range-1.0' )].
+2024-07-23 07:54:49.289+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] Constraint Index( id=7, name='constraint_5789ae3', type='RANGE', schema=(:Label[3] {PropertyKey[11]}), indexProvider='range-1.0' ) is ONLINE.
+2024-07-23 07:54:49.289+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] Constraint Index( id=8, name='constraint_74fad970', type='RANGE', schema=(:Label[3] {PropertyKey[27]}), indexProvider='range-1.0' ) is ONLINE.
+2024-07-23 07:54:49.289+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] Constraint Index( id=9, name='auth-constraint', type='RANGE', schema=(:Label[4] {PropertyKey[28], PropertyKey[27]}), indexProvider='range-1.0' ) is ONLINE.
+2024-07-23 07:54:49.290+0000 INFO  [o.n.s.s.s.UserSecurityGraphComponent] Initializing system graph model for component 'security-users' with version -1 and status UNINITIALIZED
+2024-07-23 07:54:49.295+0000 INFO  [o.n.s.s.s.UserSecurityGraphComponent] Setting up initial user from defaults: neo4j
+2024-07-23 07:54:49.296+0000 INFO  [o.n.s.s.a.CommunitySecurityModule] CREATE USER neo4j PASSWORD ****** CHANGE REQUIRED
+2024-07-23 07:54:49.315+0000 INFO  [o.n.s.s.s.UserSecurityGraphComponent] Setting version for 'security-users' to 5
+2024-07-23 07:54:49.319+0000 INFO  [o.n.s.s.s.UserSecurityGraphComponent] After initialization of system graph model component 'security-users' have version 5 and status CURRENT
+2024-07-23 07:54:49.325+0000 INFO  [o.n.s.s.s.UserSecurityGraphComponent] Performing postInitialization step for component 'security-users' with version 5 and status CURRENT
+2024-07-23 07:54:49.327+0000 INFO  [o.n.d.d.DatabaseLifecycles] Creating 'DatabaseId{73a93890[neo4j]}'.
+2024-07-23 07:54:49.329+0000 INFO  [o.n.d.d.DatabaseLifecycles] Starting 'DatabaseId{73a93890[neo4j]}'.
+2024-07-23 07:54:49.333+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [neo4j/73a93890] Selected configured format for store /Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/databases/neo4j: RecordFormat:PageAlignedV5_0[aligned-1.1]
+2024-07-23 07:54:49.378+0000 INFO  [o.n.i.d.DiagnosticsManager] [neo4j/73a93890] 
+                                                                [neo4j/73a93890] ********************************************************************************
+                                                                [neo4j/73a93890]                               [ Database: neo4j ]                               
+                                                                [neo4j/73a93890] ********************************************************************************
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890]                                   [ Version ]                                   
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890] DBMS: community record-aligned-1.1
+                                                                [neo4j/73a93890] Kernel version: 5.21.2
+                                                                [neo4j/73a93890] 
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890]                                 [ Store files ]                                 
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890] Disk space on partition (Total / Free / Free %): 245107195904 / 1922359296 / 0
+                                                                [neo4j/73a93890] Storage files stored on file store: apfs
+                                                                [neo4j/73a93890] Storage files: (filename : modification date - size)
+                                                                [neo4j/73a93890]   neostore: 2024-07-23 07:54:49.369+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.counts.db: 2024-07-23 07:54:49.371+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.indexstats.db: 2024-07-23 07:54:49.373+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.labeltokenstore.db: 2024-07-23 07:54:49.359+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.labeltokenstore.db.id: 2024-07-23 07:54:49.359+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.labeltokenstore.db.names: 2024-07-23 07:54:49.356+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.labeltokenstore.db.names.id: 2024-07-23 07:54:49.355+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.nodestore.db: 2024-07-23 07:54:49.337+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.nodestore.db.id: 2024-07-23 07:54:49.337+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.nodestore.db.labels: 2024-07-23 07:54:49.334+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.nodestore.db.labels.id: 2024-07-23 07:54:49.334+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.propertystore.db: 2024-07-23 07:54:49.349+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.propertystore.db.arrays: 2024-07-23 07:54:49.347+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.propertystore.db.arrays.id: 2024-07-23 07:54:49.346+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.propertystore.db.id: 2024-07-23 07:54:49.349+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.propertystore.db.index: 2024-07-23 07:54:49.342+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.propertystore.db.index.id: 2024-07-23 07:54:49.341+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.propertystore.db.index.keys: 2024-07-23 07:54:49.338+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.propertystore.db.index.keys.id: 2024-07-23 07:54:49.338+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.propertystore.db.strings: 2024-07-23 07:54:49.342+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.propertystore.db.strings.id: 2024-07-23 07:54:49.342+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.relationshipgroupstore.db: 2024-07-23 07:54:49.365+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.relationshipgroupstore.db.id: 2024-07-23 07:54:49.364+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.relationshipgroupstore.degrees.db: 2024-07-23 07:54:49.372+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.relationshipstore.db: 2024-07-23 07:54:49.350+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.relationshipstore.db.id: 2024-07-23 07:54:49.349+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.relationshiptypestore.db: 2024-07-23 07:54:49.355+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.relationshiptypestore.db.id: 2024-07-23 07:54:49.354+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.relationshiptypestore.db.names: 2024-07-23 07:54:49.350+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.relationshiptypestore.db.names.id: 2024-07-23 07:54:49.350+0000 - 0B
+                                                                [neo4j/73a93890]   neostore.schemastore.db: 2024-07-23 07:54:49.360+0000 - 8.000KiB
+                                                                [neo4j/73a93890]   neostore.schemastore.db.id: 2024-07-23 07:54:49.360+0000 - 0B
+                                                                [neo4j/73a93890] Storage summary: 
+                                                                [neo4j/73a93890]   Total size of store: 72.00KiB
+                                                                [neo4j/73a93890]   Total size of mapped files: 72.00KiB
+                                                                [neo4j/73a93890] 
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890]                               [ Transaction log ]                               
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890] Transaction log files stored on file store: apfs
+                                                                [neo4j/73a93890] Transaction log metadata:
+                                                                [neo4j/73a93890]  - current kernel version used in transactions: V5_20
+                                                                [neo4j/73a93890]  - last committed transaction id: 1
+                                                                [neo4j/73a93890] Transaction log files:
+                                                                [neo4j/73a93890]  - existing transaction log versions: -1--1
+                                                                [neo4j/73a93890]  - no transactions found
+                                                                [neo4j/73a93890] Checkpoint log files:
+                                                                [neo4j/73a93890]  - existing checkpoint log versions: -1--1
+                                                                [neo4j/73a93890]  - no checkpoints found
+                                                                [neo4j/73a93890] 
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890]                                   [ Id usage ]                                  
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+                                                                [neo4j/73a93890] NodeStore[neostore.nodestore.db]: used=0 high=-1
+                                                                [neo4j/73a93890] StringPropertyStore[neostore.propertystore.db.index.keys]: used=1 high=0
+                                                                [neo4j/73a93890] PropertyIndexStore[neostore.propertystore.db.index]: used=0 high=-1
+                                                                [neo4j/73a93890] StringPropertyStore[neostore.propertystore.db.strings]: used=1 high=0
+                                                                [neo4j/73a93890] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+                                                                [neo4j/73a93890] PropertyStore[neostore.propertystore.db]: used=0 high=-1
+                                                                [neo4j/73a93890] RelationshipStore[neostore.relationshipstore.db]: used=0 high=-1
+                                                                [neo4j/73a93890] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=1 high=0
+                                                                [neo4j/73a93890] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=0 high=-1
+                                                                [neo4j/73a93890] StringPropertyStore[neostore.labeltokenstore.db.names]: used=1 high=0
+                                                                [neo4j/73a93890] LabelTokenStore[neostore.labeltokenstore.db]: used=0 high=-1
+                                                                [neo4j/73a93890] SchemaStore[neostore.schemastore.db]: used=1 high=0
+                                                                [neo4j/73a93890] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+                                                                [neo4j/73a93890] NeoStore[neostore]: used=-1 high=-1
+                                                                [neo4j/73a93890] 
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890]                                   [ Metadata ]                                  
+                                                                [neo4j/73a93890] --------------------------------------------------------------------------------
+                                                                [neo4j/73a93890] EXTERNAL_STORE_UUID (Database identifier exposed as external store identity. Generated on creation and never updated): 95f219d4-5de6-4f4b-920f-2b28a541fa34
+                                                                [neo4j/73a93890] DATABASE_ID (The last used DatabaseId for this database): null
+                                                                [neo4j/73a93890] LEGACY_STORE_VERSION (Legacy store format version. This field is used from 5.0 onwards only to distinguish non-migrated pre 5.0 metadata stores.): -3523014627327384477
+                                                                [neo4j/73a93890] STORE_ID (Store ID): StoreId{creationTime=1721721289368, random=8274836234055982923, storageEngineName='record', formatName='aligned', majorVersion=1, minorVersion=1}
+                                                                [neo4j/73a93890] 
+2024-07-23 07:54:49.379+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/73a93890] Requirement `Database unavailable` makes database neo4j unavailable.
+2024-07-23 07:54:49.380+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/73a93890] DatabaseId{73a93890[neo4j]} is unavailable.
+2024-07-23 07:54:49.381+0000 WARN  [o.n.k.i.s.MetaDataStore] [neo4j/73a93890] Missing counts store, rebuilding it.
+2024-07-23 07:54:49.381+0000 WARN  [o.n.k.i.s.MetaDataStore] [neo4j/73a93890] Counts store rebuild completed.
+2024-07-23 07:54:49.385+0000 INFO  [o.n.k.d.Database] [neo4j/73a93890] Starting transaction log [/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/transactions/neo4j/neostore.transaction.db.0] at version=0
+2024-07-23 07:54:49.390+0000 INFO  [o.n.k.d.Database] [neo4j/73a93890] Starting transaction log [/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/data/transactions/neo4j/checkpoint.0] at version=0
+2024-07-23 07:54:49.391+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [neo4j/73a93890] Scanning log file with version 0 for checkpoint entries
+2024-07-23 07:54:49.392+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/73a93890] Fulfilling of requirement 'Database unavailable' makes database neo4j available.
+2024-07-23 07:54:49.392+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/73a93890] DatabaseId{73a93890[neo4j]} is ready.
+2024-07-23 07:54:49.401+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=2, name='index_f7700477', type='LOOKUP', schema=()-[:<any-types>]-(), indexProvider='token-lookup-1.0' )]
+2024-07-23 07:54:49.413+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=2, name='index_f7700477', type='LOOKUP', schema=()-[:<any-types>]-(), indexProvider='token-lookup-1.0' )].
+2024-07-23 07:54:49.417+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=1, name='index_343aff4e', type='LOOKUP', schema=(:<any-labels>), indexProvider='token-lookup-1.0' )]
+2024-07-23 07:54:49.433+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=1, name='index_343aff4e', type='LOOKUP', schema=(:<any-labels>), indexProvider='token-lookup-1.0' )].
+2024-07-23 07:54:49.435+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/73a93890] Checkpoint triggered by "Database init completed." @ txId: 3 checkpoint started...
+2024-07-23 07:54:49.620+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/73a93890] Checkpoint triggered by "Database init completed." @ txId: 3 checkpoint completed in 184ms. Checkpoint flushed 74 pages (0% of total available pages), in 57 IOs. Checkpoint performed with IO limit: unlimited, paused in total 0 times( 0 millis).
+2024-07-23 07:54:49.621+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [neo4j/73a93890] No log version pruned. The strategy used was '2 days 2147483648 size'. 
+2024-07-23 07:54:49.621+0000 INFO  [o.n.u.UserDataCollector] Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2024-07-23 07:54:49.658+0000 INFO  [o.n.b.p.c.c.n.SocketNettyConnector] Bolt enabled on localhost:7687.
+2024-07-23 07:54:49.659+0000 WARN  [i.n.b.ServerBootstrap] Unknown channel option 'SO_REUSEADDR' for channel '[id: 0x6e39d7f6]'
+2024-07-23 07:54:49.667+0000 INFO  [o.n.b.BoltServer] Bolt server started
+2024-07-23 07:54:49.667+0000 INFO  [o.n.s.A.ServerComponentsLifecycleAdapter] Starting web server
+2024-07-23 07:54:50.104+0000 INFO  [o.n.s.CommunityNeoWebServer] HTTP enabled on localhost:7474.
+2024-07-23 07:54:50.104+0000 INFO  [o.n.s.CommunityNeoWebServer] Remote interface available at http://localhost:7474/
+2024-07-23 07:54:50.104+0000 INFO  [o.n.s.A.ServerComponentsLifecycleAdapter] Web server started.
+2024-07-23 07:54:50.106+0000 INFO  [o.n.g.f.DatabaseManagementServiceFactory] id: F473889DB2758878EC045D8B5872EA5E2A18E9CBEE34B1D91C77375FB9164C9F
+2024-07-23 07:54:50.106+0000 INFO  [o.n.g.f.DatabaseManagementServiceFactory] name: system
+2024-07-23 07:54:50.106+0000 INFO  [o.n.g.f.DatabaseManagementServiceFactory] creationDate: 2024-07-23T07:54:48.229Z
+2024-07-23 08:09:58.707+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [system/00000000] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 42 checkpoint started...
+2024-07-23 08:09:58.972+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [system/00000000] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 42 checkpoint completed in 260ms. Checkpoint flushed 75 pages (0% of total available pages), in 75 IOs. Checkpoint performed with IO limit: unlimited, paused in total 0 times( 0 millis).
+2024-07-23 08:09:58.972+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [system/00000000] No log version pruned. The strategy used was '2 days 2147483648 size'. 
+2024-07-23 09:05:27.171+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=3, name='index_a0750792', type='RANGE', schema=(:Document {id}), indexProvider='range-1.0' )]
+2024-07-23 09:05:27.186+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=4, name='index_ff656cf1', type='RANGE', schema=(:TextUnit {id}), indexProvider='range-1.0' )]
+2024-07-23 09:05:27.245+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=4, name='index_ff656cf1', type='RANGE', schema=(:TextUnit {id}), indexProvider='range-1.0' )].
+2024-07-23 09:05:27.247+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=3, name='index_a0750792', type='RANGE', schema=(:Document {id}), indexProvider='range-1.0' )].
+2024-07-23 09:05:27.252+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=5, name='index_7c13947c', type='RANGE', schema=(:Entity {id}), indexProvider='range-1.0' )]
+2024-07-23 09:05:27.255+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=6, name='index_52b0bdbb', type='RANGE', schema=(:Relationship {id}), indexProvider='range-1.0' )]
+2024-07-23 09:05:27.461+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=6, name='index_52b0bdbb', type='RANGE', schema=(:Relationship {id}), indexProvider='range-1.0' )].
+2024-07-23 09:05:27.463+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=5, name='index_7c13947c', type='RANGE', schema=(:Entity {id}), indexProvider='range-1.0' )].
+2024-07-23 09:05:27.467+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=7, name='index_243dda65', type='RANGE', schema=(:Node {id}), indexProvider='range-1.0' )]
+2024-07-23 09:05:27.470+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=8, name='index_7bd9d018', type='RANGE', schema=(:Community {id}), indexProvider='range-1.0' )]
+2024-07-23 09:05:27.502+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=8, name='index_7bd9d018', type='RANGE', schema=(:Community {id}), indexProvider='range-1.0' )].
+2024-07-23 09:05:27.508+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index population started: [Index( id=9, name='index_94a88692', type='RANGE', schema=(:CommunityReport {id}), indexProvider='range-1.0' )]
+2024-07-23 09:05:27.522+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=7, name='index_243dda65', type='RANGE', schema=(:Node {id}), indexProvider='range-1.0' )].
+2024-07-23 09:05:27.547+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] [neo4j/73a93890] Index creation finished for index [Index( id=9, name='index_94a88692', type='RANGE', schema=(:CommunityReport {id}), indexProvider='range-1.0' )].
+2024-07-23 09:05:31.077+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/73a93890] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 63 checkpoint started...
+2024-07-23 09:05:31.286+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/73a93890] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 63 checkpoint completed in 206ms. Checkpoint flushed 82 pages (0% of total available pages), in 73 IOs. Checkpoint performed with IO limit: unlimited, paused in total 0 times( 0 millis).
+2024-07-23 09:05:31.287+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [neo4j/73a93890] No log version pruned. The strategy used was '2 days 2147483648 size'. 
+2024-07-23 09:05:54.358+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 26 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 3.0 to 59.0, which is a divergence of 0.9491525423728814 which is greater than threshold 0.7467836570413694. Query id: 922.
+2024-07-23 09:08:47.835+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 175 seconds. Reason: CardinalityByLabelsAndRelationshipType(Some(LabelId(2)),Some(RelTypeId(0)),None) changed from 45.0 to 405.0, which is a divergence of 0.8888888888888888 which is greater than threshold 0.7193446658722559. Query id: 1167.
+2024-07-23 09:08:47.836+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 173 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 59.0 to 475.0, which is a divergence of 0.8757894736842106 which is greater than threshold 0.7196462003299612. Query id: 1168.
+2024-07-23 09:08:47.949+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 175 seconds. Reason: CardinalityByLabelsAndRelationshipType(Some(LabelId(6)),Some(RelTypeId(2)),Some(LabelId(5))) changed from 5.0 to 25.0, which is a divergence of 0.8 which is greater than threshold 0.7193241927791884. Query id: 1174.
+2024-07-23 09:08:48.121+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 175 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,Some(RelTypeId(1)),Some(LabelId(1))) changed from 9.0 to 45.0, which is a divergence of 0.8 which is greater than threshold 0.7192987365584796. Query id: 1187.
+2024-07-23 09:08:48.162+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 175 seconds. Reason: CardinalityByLabelsAndRelationshipType(Some(LabelId(5)),Some(RelTypeId(1)),Some(LabelId(1))) changed from 9.0 to 45.0, which is a divergence of 0.8 which is greater than threshold 0.7192857421194714. Query id: 1192.
+2024-07-23 09:08:48.244+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 175 seconds. Reason: CardinalityByLabelsAndRelationshipType(Some(LabelId(2)),Some(RelTypeId(0)),None) changed from 45.0 to 405.0, which is a divergence of 0.8888888888888888 which is greater than threshold 0.7192759520988296. Query id: 1199.
+2024-07-23 09:08:48.412+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 175 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,Some(RelTypeId(1)),Some(LabelId(1))) changed from 9.0 to 45.0, which is a divergence of 0.8 which is greater than threshold 0.719249787351616. Query id: 1213.
+2024-07-23 09:10:02.894+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 106 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,Some(RelTypeId(1)),Some(LabelId(1))) changed from 9.0 to 45.0, which is a divergence of 0.8 which is greater than threshold 0.7316941679879182. Query id: 1274.
+2024-07-23 09:10:02.901+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 250 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,Some(RelTypeId(0)),None) changed from 45.0 to 405.0, which is a divergence of 0.8888888888888888 which is greater than threshold 0.706229591698366. Query id: 1282.
+2024-07-23 09:12:22.433+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 414 seconds. Reason: IndexPropertyExistsSelectivity(IndexDescriptor(Range,Node(LabelId(5)),List(PropertyKeyId(12)),Set(),NONE,DoNotGetValue,None,false)) changed from 0.1 to 1.0, which is a divergence of 0.9 which is greater than threshold 0.6791400406535008. Query id: 1434.
+2024-07-23 09:13:21.036+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 273 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 475.0 to 1816.0, which is a divergence of 0.7384361233480177 which is greater than threshold 0.7023125459786097. Query id: 1507.
+2024-07-23 09:20:31.596+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/73a93890] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 83 checkpoint started...
+2024-07-23 09:20:31.860+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/73a93890] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 83 checkpoint completed in 260ms. Checkpoint flushed 135 pages (0% of total available pages), in 105 IOs. Checkpoint performed with IO limit: unlimited, paused in total 0 times( 0 millis).
+2024-07-23 09:20:31.860+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [neo4j/73a93890] No log version pruned. The strategy used was '2 days 2147483648 size'. 
+2024-07-23 09:31:00.574+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 1332 seconds. Reason: CardinalityByLabelsAndRelationshipType(Some(LabelId(2)),Some(RelTypeId(0)),None) changed from 405.0 to 1620.0, which is a divergence of 0.75 which is greater than threshold 0.5591983737028384. Query id: 2138.
+2024-07-23 09:31:53.253+0000 INFO  [o.n.c.i.c.CypherQueryCaches] [neo4j/73a93890] Discarded stale query from the query cache after 1310 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,Some(RelTypeId(0)),None) changed from 405.0 to 1620.0, which is a divergence of 0.75 which is greater than threshold 0.5615719627606672. Query id: 2165.
+2024-07-23 10:13:55.536+0000 WARN  [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=290, gcTime=0, gcCount=0}
+2024-07-23 10:13:55.760+0000 WARN  [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=748, gcTime=0, gcCount=0}

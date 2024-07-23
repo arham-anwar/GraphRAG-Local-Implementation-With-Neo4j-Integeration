@@ -1,0 +1,670 @@
+"entity_graph"
+"""<graphml xmlns=http://graphml.graphdrawing.org/xmlns xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xsi:schemaLocation=http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd>
+  <key id=d5 for=edge attr.name=source_id attr.type=string />
+  <key id=d4 for=edge attr.name=description attr.type=string />
+  <key id=d3 for=edge attr.name=weight attr.type=double />
+  <key id=d2 for=node attr.name=source_id attr.type=string />
+  <key id=d1 for=node attr.name=description attr.type=string />
+  <key id=d0 for=node attr.name=type attr.type=string />
+  <graph edgedefault=undirected>
+    <node id=&quot;THE BIG BANG&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>The Big Bang is the name given to the event where matter, energy, time, and space came into being.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;PHYSICS&quot;>
+      <data key=d0>SCIENCE</data>
+      <data key=d1>Physics is the study of matter, energy, time, and space, which came into being in the Big Bang.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;CHEMISTRY&quot;>
+      <data key=d0>SCIENCE</data>
+      <data key=d1>Chemistry is the study of atoms and molecules, which came into being 300,000 years after the Big Bang.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;BIOLOGY&quot;>
+      <data key=d0>SCIENCE</data>
+      <data key=d1>Biology is the study of organisms, which first appeared on Earth about 3.8 billion years ago.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;HISTORY&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>History refers to the development of human cultures, which started about 70,000 years ago.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;EARTH&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Earth is the planet where life first appeared and where human cultures developed.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;HOMO SAPIENS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Homo sapiens, also known as modern humans or simply Sapiens, is a species of the genus Homo and a member of the family of great apes. It is characterized by its large brain and high energy consumption at rest. Homo sapiens formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. As the species that includes wise men, Homo sapiens has kept a secret about its uncivilized cousins and former siblings. However, the future of Homo sapiens is uncertain, with experts suggesting that they may not survive for 2 million years, given the instability of their existence a thousand years from now.</data>
+      <data key=d2>0f4f44a0eb6ff6da95c8f12946faff91,13b96cfd09f03307717076cf0624218f,3bb28165d90d7db5f19e2208ec0a8b34,65e2981c6c6a6b1cddbdde3166ad329b,8bd4c7f5f1ddf7c6d91f4bae802bd4ba,9618bb9b971fa5efb45c79574ff34860,dd4335de10ecc873b69ad14e533cde00,feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;COGNITIVE REVOLUTION&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>The Cognitive Revolution is an event that started history about 70,000 years ago.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;AGRICULTURAL REVOLUTION&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>The Agricultural Revolution is an event that sped up history about 12,000 years ago.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;SCIENTIFIC REVOLUTION&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>The Scientific Revolution is an event that may end history and start something completely different, getting underway only 500 years ago.</data>
+      <data key=d2>dd4335de10ecc873b69ad14e533cde00</data>
+    </node>
+    <node id=&quot;THE AGRICULTURAL REVOLUTION&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>The Agricultural Revolution is an historical event that occurred approximately 12,000 years ago and significantly sped up human progress.</data>
+      <data key=d2>64f6ebc1721155ebd85f715b8c39c8bb</data>
+    </node>
+    <node id=&quot;THE SCIENTIFIC REVOLUTION&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>The Scientific Revolution is an historical event that began 500 years ago and may have marked the end of history and the beginning of something completely different.</data>
+      <data key=d2>64f6ebc1721155ebd85f715b8c39c8bb</data>
+    </node>
+    <node id=&quot;HUMANS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Humans are a species that have been in existence for approximately 2.5 million years, characterized by intricate hand movements and tool production, an upright gait, and significant progress during the Agricultural and Scientific Revolutions. They are distinguished by their extraordinarily large brains compared to other animals, with an average brain size ranging from 1,200-1,400 cubic centimeters.</data>
+      <data key=d2>64f6ebc1721155ebd85f715b8c39c8bb,a189361cf240d794a22d9cbeea508cda,eb2e82d94232966bd9797c758dda347a</data>
+    </node>
+    <node id=&quot;EAST AFRICA&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>East Africa is a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the cradle of humanity, where human evolution continued, and new species emerged. More specifically, East Africa is identified as the original homeland of both Homo sapiens and Australopithecus.</data>
+      <data key=d2>13b96cfd09f03307717076cf0624218f,64f6ebc1721155ebd85f715b8c39c8bb,9618bb9b971fa5efb45c79574ff34860,feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;MODERN HUMANS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Modern humans are a species that first appeared approximately 2.5 million years ago and share similarities with other primates such as chimpanzees, baboons, and elephants.</data>
+      <data key=d2>64f6ebc1721155ebd85f715b8c39c8bb</data>
+    </node>
+    <node id=&quot;LOCAL BEAUTY&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>The local beauty refers to the appealing natural or man-made features of a place, indicating a geographical location.</data>
+      <data key=d2>3e9fb1e24142df534601026345ef03e3</data>
+    </node>
+    <node id=&quot;WISE OLD MATRIARCHS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Wise old matriarchs refers to respected and experienced older female leaders, indicating a group of individuals.</data>
+      <data key=d2>3e9fb1e24142df534601026345ef03e3</data>
+    </node>
+    <node id=&quot;PREHISTORIC HUMANS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Prehistoric humans are early ancestors of modern humans, characterized as insignificant animals with no special impact on their environment.</data>
+      <data key=d2>3e9fb1e24142df534601026345ef03e3</data>
+    </node>
+    <node id=&quot;DESCENDANTS OF PREHISTORIC HUMANS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Descendants of prehistoric humans are individuals who are related to prehistoric humans and have achieved significant milestones in history.</data>
+      <data key=d2>3e9fb1e24142df534601026345ef03e3</data>
+    </node>
+    <node id=&quot;BIOLOGISTS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Biologists are professionals who classify organisms into species based on their mating habits and genetic traits.</data>
+      <data key=d2>3e9fb1e24142df534601026345ef03e3</data>
+    </node>
+    <node id=&quot;HORSES AND DONKEYS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Horses and donkeys are two distinct species that share a recent common ancestor but show little sexual interest in each other, resulting in sterile offspring.</data>
+      <data key=d2>3e9fb1e24142df534601026345ef03e3</data>
+    </node>
+    <node id=&quot;BULLDOG AND SPANIEL&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Bulldog and spaniel are members of the same species, sharing the same DNA pool and indicating a group of related animals.</data>
+      <data key=d2>3e9fb1e24142df534601026345ef03e3</data>
+    </node>
+    <node id=&quot;DONKEYS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Donkeys are a distinct species that cannot produce fertile offspring with horses.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;HORSES&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Horses are a distinct species that cannot produce fertile offspring with donkeys.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;MULES&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Mules are the sterile offspring resulting from the mating of donkeys and horses.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;BULLDOGS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Bulldogs are a species that can interbreed with other species within the same genus, such as spaniels.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;SPANIELS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Spaniels are a species that can interbreed with other species within the same genus, such as bulldogs.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;LIONS&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Lions are a species within the genus Panthera, which also includes tigers, leopards, and jaguars.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;TIGERS&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Tigers are a species within the genus Panthera, which also includes lions, leopards, and jaguars.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;LEOPARDS&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Leopards are a species within the genus Panthera, which also includes lions, tigers, and jaguars.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;JAGUARS&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Jaguars are a species within the genus Panthera, which also includes lions, tigers, and leopards.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;GENUS&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>Genus is a category used by biologists to group organisms that have evolved from a common ancestor.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;FAMILIES&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>Families are categories used by biologists to group genera, such as cats, dogs, and elephants.</data>
+      <data key=d2>ea1005e7521d78327d39be6bb78a563d</data>
+    </node>
+    <node id=&quot;LEO&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Leo is a species of the genus Panthera, and a member of the family of cats.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </node>
+    <node id=&quot;PANTHERA&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Panthera is a genus that includes lions, leopards, jaguars, and tigers.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </node>
+    <node id=&quot;HOMO&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Homo is a genus that includes modern humans and several extinct species of archaic humans.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </node>
+    <node id=&quot;CATS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Cats is a family that includes lions, cheetahs, house cats, and other feline species.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </node>
+    <node id=&quot;DOGS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Dogs is a family that includes wolves, foxes, jackals, and other canine species.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </node>
+    <node id=&quot;ELEPHANTS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Elephants is a family that includes elephants, mammoths, mastodons, and other proboscidean species.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </node>
+    <node id=&quot;GREAT APES&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>The entity Great Apes refers to a family of primates that includes humans, chimpanzees, gorillas, and orangutans. This term, Great Apes, is used collectively to indicate their close evolutionary relationship, highlighting the significance of their shared characteristics and common ancestry.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b,8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </node>
+    <node id=&quot;CHIMPANZEES&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Chimpanzees are one of the closest living relatives to humans, sharing a common ancestor just 6 million years ago. They are specifically the closest living relatives of Homo sapiens, also sharing a common ancestor that dates back 6 million years.</data>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b,8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </node>
+    <node id=&quot;FELINES&quot;>
+      <data key=d2>65e2981c6c6a6b1cddbdde3166ad329b</data>
+      <data key=d1 />
+    </node>
+    <node id=&quot;GORILLAS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Gorillas are close living relatives to humans, sharing a common ancestry with them.</data>
+      <data key=d2>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </node>
+    <node id=&quot;ORANG-UTANS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Orang-utans are close living relatives to humans, sharing a common ancestry with them.</data>
+      <data key=d2>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </node>
+    <node id=&quot;SINGLE FEMALE APE&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>The single female ape is the common ancestor of both chimpanzees and humans, having lived 6 million years ago.</data>
+      <data key=d2>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </node>
+    <node id=&quot;AUSTRALOPITHECUS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Australopithecus is an earlier genus of apes from which humans evolved, also known as 'Southern Ape'.</data>
+      <data key=d2>9618bb9b971fa5efb45c79574ff34860</data>
+    </node>
+    <node id=&quot;NORTH AFRICA&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>North Africa is mentioned as one of the areas settled by some of the archaic humans from East Africa.</data>
+      <data key=d2>9618bb9b971fa5efb45c79574ff34860</data>
+    </node>
+    <node id=&quot;EUROPE&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Europe is a continent where human evolution occurred and it is also identified as one of the areas settled by some of the archaic humans originating from East Africa.</data>
+      <data key=d2>13b96cfd09f03307717076cf0624218f,9618bb9b971fa5efb45c79574ff34860</data>
+    </node>
+    <node id=&quot;ASIA&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Asia is a continent where human evolution occurred and is mentioned as one of the areas settled by some of the archaic humans originating from East Africa.</data>
+      <data key=d2>13b96cfd09f03307717076cf0624218f,9618bb9b971fa5efb45c79574ff34860</data>
+    </node>
+    <node id=&quot;INDONESIA&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Indonesia is a region known for its steaming jungles, where human populations have evolved distinct traits to adapt to the unique environment. This description differentiates Indonesia from northern Europe, highlighting the contrasting survival requirements in these two regions.</data>
+      <data key=d2>9618bb9b971fa5efb45c79574ff34860,c97ef3a4adea86ede4938c80d59abb94</data>
+    </node>
+    <node id=&quot;NORTHERN EUROPE&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Northern Europe is a region with snowy forests, where human populations evolved distinct traits for survival.</data>
+      <data key=d2>c97ef3a4adea86ede4938c80d59abb94</data>
+    </node>
+    <node id=&quot;HOMO RUDOLFENSIS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Homo rudolfensis, also known as Man from Lake Rudolf, is a human species that evolved in East Africa. This species is uniquely identified as one of the human species that developed in the region.</data>
+      <data key=d2>13b96cfd09f03307717076cf0624218f,c97ef3a4adea86ede4938c80d59abb94,feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;HOMO ERECTUS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Homo erectus, also known as Upright Man, is a human species that evolved in East Asia and survived for close to 2 million years. This ancient species is recognized for its significant adaptation of walking upright, making it a crucial part of human evolutionary history.</data>
+      <data key=d2>3bb28165d90d7db5f19e2208ec0a8b34,c97ef3a4adea86ede4938c80d59abb94</data>
+    </node>
+    <node id=&quot;HOMO NEANDERTHALENSIS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Homo neanderthalensis, or Neanderthals, is a human species that evolved in Europe and western Asia, well-adapted to the cold climate of Ice Age western Eurasia.</data>
+      <data key=d2>c97ef3a4adea86ede4938c80d59abb94</data>
+    </node>
+    <node id=&quot;HOMO SOLOENSIS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Homo soloensis, also known as the Man from the Solo Valley or Java Man, was an ancient human species that lived on the island of Java, Indonesia. This species was adapted to life in the tropics.</data>
+      <data key=d2>3bb28165d90d7db5f19e2208ec0a8b34,c97ef3a4adea86ede4938c80d59abb94</data>
+    </node>
+    <node id=&quot;JAVA&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Java is an island in Indonesia where Homo soloensis, 'Man from the Solo Valley', lived.</data>
+      <data key=d2>3bb28165d90d7db5f19e2208ec0a8b34</data>
+    </node>
+    <node id=&quot;FLORES&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Flores is a small Indonesian island that is known for the unique evolution of a dwarf human species, Homo oresiensis. This island was the site where archaic humans underwent a process of dwarfing, resulting in the distinct species of Homo oresiensis.</data>
+      <data key=d2>3bb28165d90d7db5f19e2208ec0a8b34,feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;HOMO FLORESIENSIS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Homo floresiensis, also known as Flores dwarves, is a unique ancient human species that reached a maximum height of one meter and weighed no more than twenty-five kilograms.</data>
+      <data key=d2>3bb28165d90d7db5f19e2208ec0a8b34</data>
+    </node>
+    <node id=&quot;HOMO ORESIENSIS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Homo oresiensis is a unique species of dwarf humans that reached a maximum height of one metre and weighed no more than twenty-five kilograms, capable of producing stone tools and hunting.</data>
+      <data key=d2>feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;HOMO DENISOVA&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Homo denisova is a previously unknown human species, discovered through a fossilised finger bone in the Denisova Cave in Siberia.</data>
+      <data key=d2>feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;DENISOVA CAVE&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Denisova Cave is a location in Siberia where a fossilised finger bone of a previously unknown human species, Homo denisova, was discovered.</data>
+      <data key=d2>feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;HOMO ERGASTER&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Homo ergaster, also known as Working Man, is a human species that evolved in East Africa. This species is uniquely recognized as one of the human species that developed in the same region.</data>
+      <data key=d2>13b96cfd09f03307717076cf0624218f,feccd5ea2e791c74245cd72130cc8a97</data>
+    </node>
+    <node id=&quot;HUMAN SPECIES&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Human Species refers to the different types of humans that have existed over time, including several that coexisted.&gt;</data>
+      <data key=d2>56e787cf8c963ad40eb29fe7c1542377</data>
+    </node>
+    <node id=&quot;EARLY MEN AND WOMEN&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Early Men and Women refers to the first humans that existed, around 2.5 million years ago, with a brain size of about 600 cubic centimeters.&gt;</data>
+      <data key=d2>56e787cf8c963ad40eb29fe7c1542377</data>
+    </node>
+    <node id=&quot;MODERN SAPIENS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Modern Sapiens, also known as current humans, are characterized by their brain size which averages between 1,200 to 1,400 cubic centimeters. This measurement distinguishes them as a specific group of entities within the human species.</data>
+      <data key=d2>56e787cf8c963ad40eb29fe7c1542377,eb2e82d94232966bd9797c758dda347a</data>
+    </node>
+    <node id=&quot;NEANDERTHAL&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Neanderthal refers to an extinct species of human with a larger brain size than Modern Sapiens.&gt;</data>
+      <data key=d2>56e787cf8c963ad40eb29fe7c1542377</data>
+    </node>
+    <node id=&quot;BRAIN SIZE&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Brain Size refers to the volume of the human brain, which has increased significantly over time.&gt;</data>
+      <data key=d2>56e787cf8c963ad40eb29fe7c1542377</data>
+    </node>
+    <node id=&quot;MAMMALS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Mammals are a group of animals, with an average brain size of 200 cubic centimeters for those weighing sixty kilograms.</data>
+      <data key=d2>eb2e82d94232966bd9797c758dda347a</data>
+    </node>
+    <node id=&quot;EARLIEST MEN AND WOMEN&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Earliest Men and Women are a group of early humans who lived 2.5 million years ago and had brains of about 600 cubic centimeters.</data>
+      <data key=d2>eb2e82d94232966bd9797c758dda347a</data>
+    </node>
+    <node id=&quot;NEANDERTHALS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Neanderthals are a group of early humans with brains even larger than Modern Sapiens.</data>
+      <data key=d2>eb2e82d94232966bd9797c758dda347a</data>
+    </node>
+    <node id=&quot;FELINE FAMILY&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Feline Family is a group of animals, specifically cats, who have not developed large brains for complex tasks like calculus.</data>
+      <data key=d2>eb2e82d94232966bd9797c758dda347a</data>
+    </node>
+    <node id=&quot;GENUS HOMO&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Genus Homo is the only group in the entire animal kingdom to have come up with massive thinking machines, referring to large brains.</data>
+      <data key=d2>eb2e82d94232966bd9797c758dda347a</data>
+    </node>
+    <node id=&quot;THE BRAIN&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>The brain is a significant organ in Homo sapiens, accounting for 2-3% of total body weight but consuming 25% of the body's energy at rest.</data>
+      <data key=d2>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </node>
+    <node id=&quot;OTHER APES&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Other apes, compared to Homo sapiens, have smaller brains that require only 8% of rest-time energy.</data>
+      <data key=d2>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </node>
+    <node id=&quot;ARCHAIC HUMANS&quot;>
+      <data key=d0>PERSON</data>
+      <data key=d1>Archaic humans paid for their large brains with increased time spent searching for food and muscle atrophy.</data>
+      <data key=d2>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </node>
+    <node id=&quot;CHIMPANZEE&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>Chimpanzee is an example of an ape that can physically overpower a Homo sapiens but cannot win an argument.</data>
+      <data key=d2>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </node>
+    <node id=&quot;CARS AND GUNS&quot;>
+      <data key=d0>TECHNOLOGY</data>
+      <data key=d1>Cars and guns are recent technological advancements that enable Homo sapiens to move faster and defend themselves from a safe distance.</data>
+      <data key=d2>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </node>
+    <node id=&quot;HUMAN NEURAL NETWORKS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Human Neural Networks refers to the complex network of neurons in the human brain that have been growing and evolving over time.</data>
+      <data key=d2>e944bdd871c669dd3f7b5e758cec1805</data>
+    </node>
+    <node id=&quot;INT KNIVES AND POINTED STICKS&quot;>
+      <data key=d0>TECHNOLOGY</data>
+      <data key=d1>Int knives and pointed sticks are simple tools made by early humans using the increased concentration of nerves and finely tuned muscles in their hands.</data>
+      <data key=d2>e944bdd871c669dd3f7b5e758cec1805</data>
+    </node>
+    <node id=&quot;2.5 MILLION YEARS AGO&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>2.5 million years ago marks the first evidence of tool production by ancient humans.</data>
+      <data key=d2>e944bdd871c669dd3f7b5e758cec1805</data>
+    </node>
+    <node id=&quot;ARCHAEOLOGISTS&quot;>
+      <data key=d0>ORGANIZATION</data>
+      <data key=d1>Archaeologists are professionals who study human history by analyzing artifacts and other physical remains.</data>
+      <data key=d2>e944bdd871c669dd3f7b5e758cec1805</data>
+    </node>
+    <node id=&quot;SOPHISTICATED TOOLS&quot;>
+      <data key=d0>TECHNOLOGY</data>
+      <data key=d1>Sophisticated Tools refer to the complex tools that humans can produce and use due to the increased concentration of nerves and finely tuned muscles in their hands.</data>
+      <data key=d2>e944bdd871c669dd3f7b5e758cec1805</data>
+    </node>
+    <node id=&quot;WALKING UPRIGHT&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Walking Upright is a significant trait of humans that allows them to scan the environment and frees their hands for other purposes, leading to the evolution of intricate hand tasks and tool production.</data>
+      <data key=d2>e944bdd871c669dd3f7b5e758cec1805</data>
+    </node>
+    <node id=&quot;NATURAL SELECTION&quot;>
+      <data key=d0>CONCEPT</data>
+      <data key=d1>Natural Selection is a process that leads to evolutionary pressure and the development of specific traits in organisms.&gt;</data>
+      <data key=d2>a189361cf240d794a22d9cbeea508cda</data>
+    </node>
+    <node id=&quot;PRIMATE ANCESTORS&quot;>
+      <data key=d0>GEO</data>
+      <data key=d1>Primate Ancestors refer to the early ancestors of humans, who walked on all fours and had smaller heads.&gt;</data>
+      <data key=d2>a189361cf240d794a22d9cbeea508cda</data>
+    </node>
+    <node id=&quot;SEA&quot;>
+      <data key=d0>LOCATION</data>
+      <data key=d1>The Sea is a geographical feature that supported the large cranium of humans as they adjusted to an upright position.&gt;</data>
+      <data key=d2>a189361cf240d794a22d9cbeea508cda</data>
+    </node>
+    <node id=&quot;BABIES&quot;>
+      <data key=d0>EVENT</data>
+      <data key=d1>Babies refers to the offspring of humans, whose heads were getting bigger just as the birth canal was constricting due to narrower hips.&gt;</data>
+      <data key=d2>a189361cf240d794a22d9cbeea508cda</data>
+    </node>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;HOMO&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens is a species of the genus Homo, which includes modern humans and several extinct species of archaic humans.</data>
+      <data key=d5>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;GREAT APES&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens is a member of the family of Great Apes, which includes humans, chimpanzees, gorillas, and orangutans.</data>
+      <data key=d5>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;CHIMPANZEES&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Chimpanzees are the closest living relatives of Homo sapiens, sharing a common ancestor 6 million years ago.</data>
+      <data key=d5>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;SINGLE FEMALE APE&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>The single female ape is the direct ancestor of Homo sapiens.</data>
+      <data key=d5>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;AUSTRALOPITHECUS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens evolved from Australopithecus in East Africa.</data>
+      <data key=d5>9618bb9b971fa5efb45c79574ff34860</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;EAST AFRICA&quot;>
+      <data key=d3>3.0</data>
+      <data key=d4>Homo sapiens, the species to which humans currently belong, originally evolved in East Africa. This indicates a strong geographical connection between the two entities, as Homo sapiens are known to have evolved in this region. The evidence suggests that East Africa played a crucial role in the emergence of Homo sapiens as a species.</data>
+      <data key=d5>13b96cfd09f03307717076cf0624218f,9618bb9b971fa5efb45c79574ff34860,feccd5ea2e791c74245cd72130cc8a97</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;HOMO ERECTUS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo erectus is an ancient human species that survived for a longer duration than Homo sapiens is expected to survive.</data>
+      <data key=d5>3bb28165d90d7db5f19e2208ec0a8b34</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;EUROPE&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens evolved in Europe, indicating a geographical connection.</data>
+      <data key=d5>13b96cfd09f03307717076cf0624218f</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;ASIA&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens evolved in Asia, indicating a geographical connection.</data>
+      <data key=d5>13b96cfd09f03307717076cf0624218f</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;THE BRAIN&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens has a large brain that consumes a significant portion of the body's energy at rest.</data>
+      <data key=d5>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;OTHER APES&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens has a larger brain that requires more energy compared to other apes.</data>
+      <data key=d5>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </edge>
+    <edge source=&quot;HOMO SAPIENS&quot; target=&quot;CARS AND GUNS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo sapiens have developed cars and guns as a result of their large brains and energy consumption.</data>
+      <data key=d5>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </edge>
+    <edge source=&quot;HUMANS&quot; target=&quot;NATURAL SELECTION&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Natural Selection led to the development of intricate hand movements and tool production in humans.</data>
+      <data key=d5>a189361cf240d794a22d9cbeea508cda</data>
+    </edge>
+    <edge source=&quot;HUMANS&quot; target=&quot;PRIMATE ANCESTORS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Humans evolved from Primate Ancestors, who walked on all fours and had smaller heads.</data>
+      <data key=d5>a189361cf240d794a22d9cbeea508cda</data>
+    </edge>
+    <edge source=&quot;HUMANS&quot; target=&quot;SEA&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Humans adjusted to an upright position with the support of the Sea.</data>
+      <data key=d5>a189361cf240d794a22d9cbeea508cda</data>
+    </edge>
+    <edge source=&quot;HUMANS&quot; target=&quot;BABIES&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Humans have an evolutionary trade-off where the upright gait required narrower hips, constricting the birth canal just when babies' heads were getting bigger.</data>
+      <data key=d5>a189361cf240d794a22d9cbeea508cda</data>
+    </edge>
+    <edge source=&quot;EAST AFRICA&quot; target=&quot;AUSTRALOPITHECUS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Australopithecus is from East Africa.</data>
+      <data key=d5>9618bb9b971fa5efb45c79574ff34860</data>
+    </edge>
+    <edge source=&quot;EAST AFRICA&quot; target=&quot;HOMO RUDOLFENSIS&quot;>
+      <data key=d3>2.0</data>
+      <data key=d4>East Africa is a region that is closely associated with the evolution of Homo rudolfensis, a human species. This geographical connection is significant because it suggests that East Africa played a crucial role in the development of this species. Therefore, it can be concluded that Homo rudolfensis evolved in East Africa, and this region was instrumental in shaping the characteristics and traits of this human species.</data>
+      <data key=d5>13b96cfd09f03307717076cf0624218f,feccd5ea2e791c74245cd72130cc8a97</data>
+    </edge>
+    <edge source=&quot;EAST AFRICA&quot; target=&quot;HOMO ERGASTER&quot;>
+      <data key=d3>2.0</data>
+      <data key=d4>East Africa is the region where the human species, Homo ergaster, evolved. This indicates a strong geographical connection between the species and the region. Homo ergaster is known to have evolved in East Africa, further supporting the idea that this region played a significant role in the development of this species.</data>
+      <data key=d5>13b96cfd09f03307717076cf0624218f,feccd5ea2e791c74245cd72130cc8a97</data>
+    </edge>
+    <edge source=&quot;DONKEYS&quot; target=&quot;HORSES&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Donkeys and horses are distinct species that cannot produce fertile offspring.</data>
+      <data key=d5>ea1005e7521d78327d39be6bb78a563d</data>
+    </edge>
+    <edge source=&quot;BULLDOGS&quot; target=&quot;SPANIELS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Bulldogs and spaniels are species that can interbreed and share the same DNA pool.</data>
+      <data key=d5>ea1005e7521d78327d39be6bb78a563d</data>
+    </edge>
+    <edge source=&quot;LIONS&quot; target=&quot;TIGERS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Lions and tigers are species within the same genus, Panthera.</data>
+      <data key=d5>ea1005e7521d78327d39be6bb78a563d</data>
+    </edge>
+    <edge source=&quot;LIONS&quot; target=&quot;LEOPARDS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Lions and leopards are species within the same genus, Panthera.</data>
+      <data key=d5>ea1005e7521d78327d39be6bb78a563d</data>
+    </edge>
+    <edge source=&quot;LIONS&quot; target=&quot;JAGUARS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Lions and jaguars are species within the same genus, Panthera.</data>
+      <data key=d5>ea1005e7521d78327d39be6bb78a563d</data>
+    </edge>
+    <edge source=&quot;LEO&quot; target=&quot;PANTHERA&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Leo is a member of the genus Panthera, which includes lions, leopards, jaguars, and tigers.</data>
+      <data key=d5>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </edge>
+    <edge source=&quot;CATS&quot; target=&quot;FELINES&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Cats is a family that includes all feline species, such as lions, cheetahs, and house cats.</data>
+      <data key=d5>65e2981c6c6a6b1cddbdde3166ad329b</data>
+    </edge>
+    <edge source=&quot;GREAT APES&quot; target=&quot;CHIMPANZEES&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>The great apes include chimpanzees, indicating their close evolutionary relationship.</data>
+      <data key=d5>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </edge>
+    <edge source=&quot;GREAT APES&quot; target=&quot;GORILLAS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>The great apes include gorillas, indicating their close evolutionary relationship.</data>
+      <data key=d5>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </edge>
+    <edge source=&quot;GREAT APES&quot; target=&quot;ORANG-UTANS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>The great apes include orang-utans, indicating their close evolutionary relationship.</data>
+      <data key=d5>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </edge>
+    <edge source=&quot;CHIMPANZEES&quot; target=&quot;SINGLE FEMALE APE&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>The single female ape is the direct ancestor of chimpanzees.</data>
+      <data key=d5>8bd4c7f5f1ddf7c6d91f4bae802bd4ba</data>
+    </edge>
+    <edge source=&quot;INDONESIA&quot; target=&quot;HOMO SOLOENSIS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Indonesia's steaming jungles influenced the evolution of Homo soloensis.</data>
+      <data key=d5>c97ef3a4adea86ede4938c80d59abb94</data>
+    </edge>
+    <edge source=&quot;NORTHERN EUROPE&quot; target=&quot;HOMO NEANDERTHALENSIS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Northern Europe's snowy forests influenced the evolution of Neanderthals.</data>
+      <data key=d5>c97ef3a4adea86ede4938c80d59abb94</data>
+    </edge>
+    <edge source=&quot;HOMO RUDOLFENSIS&quot; target=&quot;HOMO ERECTUS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo rudolfensis and Homo erectus are both human species that evolved in different regions.</data>
+      <data key=d5>c97ef3a4adea86ede4938c80d59abb94</data>
+    </edge>
+    <edge source=&quot;HOMO ERECTUS&quot; target=&quot;HOMO NEANDERTHALENSIS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo neanderthalensis and Homo erectus are both human species that evolved in different regions.</data>
+      <data key=d5>c97ef3a4adea86ede4938c80d59abb94</data>
+    </edge>
+    <edge source=&quot;HOMO SOLOENSIS&quot; target=&quot;JAVA&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo soloensis lived on the island of Java.</data>
+      <data key=d5>3bb28165d90d7db5f19e2208ec0a8b34</data>
+    </edge>
+    <edge source=&quot;FLORES&quot; target=&quot;HOMO FLORESIENSIS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Homo floresiensis underwent a process of dwarfing on the island of Flores.</data>
+      <data key=d5>3bb28165d90d7db5f19e2208ec0a8b34</data>
+    </edge>
+    <edge source=&quot;FLORES&quot; target=&quot;HOMO ORESIENSIS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Flores is the island where Homo oresiensis, a unique species of dwarf humans, evolved.</data>
+      <data key=d5>feccd5ea2e791c74245cd72130cc8a97</data>
+    </edge>
+    <edge source=&quot;HOMO DENISOVA&quot; target=&quot;DENISOVA CAVE&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Denisova Cave is the location where a fossilised finger bone of Homo denisova, a previously unknown human species, was discovered.</data>
+      <data key=d5>feccd5ea2e791c74245cd72130cc8a97</data>
+    </edge>
+    <edge source=&quot;HUMAN SPECIES&quot; target=&quot;EARLY MEN AND WOMEN&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Human Species includes Early Men and Women as one of its types.</data>
+      <data key=d5>56e787cf8c963ad40eb29fe7c1542377</data>
+    </edge>
+    <edge source=&quot;HUMAN SPECIES&quot; target=&quot;MODERN SAPIENS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Human Species includes Modern Sapiens as one of its types.</data>
+      <data key=d5>56e787cf8c963ad40eb29fe7c1542377</data>
+    </edge>
+    <edge source=&quot;HUMAN SPECIES&quot; target=&quot;NEANDERTHAL&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Human Species includes Neanderthal as one of its types.</data>
+      <data key=d5>56e787cf8c963ad40eb29fe7c1542377</data>
+    </edge>
+    <edge source=&quot;EARLY MEN AND WOMEN&quot; target=&quot;BRAIN SIZE&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Brain Size is a characteristic of Early Men and Women.</data>
+      <data key=d5>56e787cf8c963ad40eb29fe7c1542377</data>
+    </edge>
+    <edge source=&quot;MODERN SAPIENS&quot; target=&quot;BRAIN SIZE&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Brain Size is a characteristic of Modern Sapiens.</data>
+      <data key=d5>56e787cf8c963ad40eb29fe7c1542377</data>
+    </edge>
+    <edge source=&quot;NEANDERTHAL&quot; target=&quot;BRAIN SIZE&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Brain Size is a characteristic of Neanderthal.</data>
+      <data key=d5>56e787cf8c963ad40eb29fe7c1542377</data>
+    </edge>
+    <edge source=&quot;THE BRAIN&quot; target=&quot;ARCHAIC HUMANS&quot;>
+      <data key=d3>1.0</data>
+      <data key=d4>Archaic humans had larger brains that required more energy, leading to increased time spent searching for food and muscle atrophy.</data>
+      <data key=d5>0f4f44a0eb6ff6da95c8f12946faff91</data>
+    </edge>
+  </graph>
+</graphml>"""

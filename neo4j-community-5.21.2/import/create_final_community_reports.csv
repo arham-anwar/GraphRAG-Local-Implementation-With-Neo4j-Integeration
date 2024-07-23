@@ -1,0 +1,235 @@
+"community","full_content","level","rank","title","rank_explanation","summary","findings","full_content_json","id"
+"0","""# The Human Brain and Its Evolution
+
+The community revolves around the human brain, a significant organ in Homo sapiens, and its evolution in archaic humans. The brain's energy consumption and the impact on archaic humans' survival are the main factors connecting these entities.
+
+## The human brain's energy consumption
+
+The human brain, as represented by entity ID 72, accounts for 2-3% of total body weight but consumes 25% of the body's energy at rest. This significant energy consumption highlights the brain's importance in human physiology and behavior. [Data: Entities (72)]
+
+## Archaic humans' large brains and consequences
+
+Archaic humans, represented by entity ID 74, had larger brains that required more energy. This led to increased time spent searching for food and muscle atrophy. The relationship between archaic humans and the brain illustrates the trade-offs and challenges associated with large brain size. [Data: Entities (74), Relationships (44)]
+
+## Homo sapiens and their large brains
+
+Homo sapiens, represented by the relationship with ID 9, have a large brain that consumes a significant portion of the body's energy at rest. This relationship emphasizes the importance of the brain in Homo sapiens and the potential consequences of its energy consumption. [Data: Relationships (9)]""",0,7.0,"The Human Brain and Its Evolution","""The impact severity rating is high due to the significant role of the brain in human survival and evolution, as well as its impact on energy consumption and foraging behaviors.""","""The community revolves around the human brain, a significant organ in Homo sapiens, and its evolution in archaic humans. The brain's energy consumption and the impact on archaic humans' survival are the main factors connecting these entities.""","[{'explanation': ""The human brain, as represented by entity ID 72, accounts for 2-3% of total body weight but consumes 25% of the body's energy at rest. This significant energy consumption highlights the brain's importance in human physiology and behavior. [Data: Entities (72)]"", 'summary': ""The human brain's energy consumption""}
+ {'explanation': 'Archaic humans, represented by entity ID 74, had larger brains that required more energy. This led to increased time spent searching for food and muscle atrophy. The relationship between archaic humans and the brain illustrates the trade-offs and challenges associated with large brain size. [Data: Entities (74), Relationships (44)]', 'summary': ""Archaic humans' large brains and consequences""}
+ {'explanation': ""Homo sapiens, represented by the relationship with ID 9, have a large brain that consumes a significant portion of the body's energy at rest. This relationship emphasizes the importance of the brain in Homo sapiens and the potential consequences of its energy consumption. [Data: Relationships (9)]"", 'summary': 'Homo sapiens and their large brains'}]","""{
+    title: The Human Brain and Its Evolution,
+    summary: The community revolves around the human brain, a significant organ in Homo sapiens, and its evolution in archaic humans. The brain's energy consumption and the impact on archaic humans' survival are the main factors connecting these entities.,
+    rating: 7.0,
+    rating_explanation: The impact severity rating is high due to the significant role of the brain in human survival and evolution, as well as its impact on energy consumption and foraging behaviors.,
+    findings: [
+        {
+            summary: The human brain's energy consumption,
+            explanation: The human brain, as represented by entity ID 72, accounts for 2-3% of total body weight but consumes 25% of the body's energy at rest. This significant energy consumption highlights the brain's importance in human physiology and behavior. [Data: Entities (72)]
+        },
+        {
+            summary: Archaic humans' large brains and consequences,
+            explanation: Archaic humans, represented by entity ID 74, had larger brains that required more energy. This led to increased time spent searching for food and muscle atrophy. The relationship between archaic humans and the brain illustrates the trade-offs and challenges associated with large brain size. [Data: Entities (74), Relationships (44)]
+        },
+        {
+            summary: Homo sapiens and their large brains,
+            explanation: Homo sapiens, represented by the relationship with ID 9, have a large brain that consumes a significant portion of the body's energy at rest. This relationship emphasizes the importance of the brain in Homo sapiens and the potential consequences of its energy consumption. [Data: Relationships (9)]
+        }
+    ]
+}""","892dcbf5-1c28-4b79-8d36-efbc0c553f5c"
+"1","""# Homo Sapiens and Their Evolutionary Relationships
+
+The community revolves around Homo sapiens, a species of the genus Homo that is characterized by its large brain and high energy consumption at rest. Homo sapiens have relationships with various entities, including their ancestors, geographical locations, and technological advancements.
+
+## Homo sapiens as the central species
+
+Homo sapiens is the central entity in this community, being a species of the genus Homo that includes modern humans and several extinct species of archaic humans. This species is characterized by its large brain and high energy consumption at rest. Homo sapiens have formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. [Data: Entities (6)]
+
+## Homo sapiens' geographical connections
+
+Homo sapiens have relationships with various geographical locations, such as East Africa, Asia, and Europe, where human evolution occurred and where some of the archaic humans originated from East Africa. These relationships suggest a strong geographical connection between Homo sapiens and these locations. [Data: Relationships (5, 8, 7)]
+
+## Homo sapiens' ancestral relationships
+
+Homo sapiens have relationships with their ancestors, such as Homo erectus, Australopithecus, and the single female ape. These relationships indicate that Homo sapiens evolved from these ancestors, suggesting their significance in understanding human evolution. [Data: Relationships (6, 4, 3)]
+
+## Homo sapiens' technological advancements
+
+Homo sapiens have relationships with technological advancements such as cars and guns, which enable them to move faster and defend themselves from a safe distance. These relationships suggest that Homo sapiens have developed these technologies as a result of their large brains and high energy consumption. [Data: Relationships (11)]
+
+## Homo sapiens' relationship with other apes
+
+Homo sapiens have a relationship with other apes, which have smaller brains that require only 8% of rest-time energy. This relationship suggests a significant difference between Homo sapiens and other apes in terms of brain size and energy consumption. [Data: Relationships (10)]""",0,7.0,"Homo Sapiens and Their Evolutionary Relationships","The impact severity rating is high due to the significance of Homo sapiens in understanding human evolution and the potential consequences of their actions on the environment and other species.","""The community revolves around Homo sapiens, a species of the genus Homo that is characterized by its large brain and high energy consumption at rest. Homo sapiens have relationships with various entities, including their ancestors, geographical locations, and technological advancements.""","[{'explanation': 'Homo sapiens is the central entity in this community, being a species of the genus Homo that includes modern humans and several extinct species of archaic humans. This species is characterized by its large brain and high energy consumption at rest. Homo sapiens have formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. [Data: Entities (6)]', 'summary': 'Homo sapiens as the central species'}
+ {'explanation': 'Homo sapiens have relationships with various geographical locations, such as East Africa, Asia, and Europe, where human evolution occurred and where some of the archaic humans originated from East Africa. These relationships suggest a strong geographical connection between Homo sapiens and these locations. [Data: Relationships (5, 8, 7)]', 'summary': ""Homo sapiens' geographical connections""}
+ {'explanation': 'Homo sapiens have relationships with their ancestors, such as Homo erectus, Australopithecus, and the single female ape. These relationships indicate that Homo sapiens evolved from these ancestors, suggesting their significance in understanding human evolution. [Data: Relationships (6, 4, 3)]', 'summary': ""Homo sapiens' ancestral relationships""}
+ {'explanation': 'Homo sapiens have relationships with technological advancements such as cars and guns, which enable them to move faster and defend themselves from a safe distance. These relationships suggest that Homo sapiens have developed these technologies as a result of their large brains and high energy consumption. [Data: Relationships (11)]', 'summary': ""Homo sapiens' technological advancements""}
+ {'explanation': 'Homo sapiens have a relationship with other apes, which have smaller brains that require only 8% of rest-time energy. This relationship suggests a significant difference between Homo sapiens and other apes in terms of brain size and energy consumption. [Data: Relationships (10)]', 'summary': ""Homo sapiens' relationship with other apes""}]","""{
+    title: Homo Sapiens and Their Evolutionary Relationships,
+    summary: The community revolves around Homo sapiens, a species of the genus Homo that is characterized by its large brain and high energy consumption at rest. Homo sapiens have relationships with various entities, including their ancestors, geographical locations, and technological advancements.,
+    rating: 7.0,
+    rating_explanation: The impact severity rating is high due to the significance of Homo sapiens in understanding human evolution and the potential consequences of their actions on the environment and other species.,
+    findings: [
+        {
+            summary: Homo sapiens as the central species,
+            explanation: Homo sapiens is the central entity in this community, being a species of the genus Homo that includes modern humans and several extinct species of archaic humans. This species is characterized by its large brain and high energy consumption at rest. Homo sapiens have formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. [Data: Entities (6)]
+        },
+        {
+            summary: Homo sapiens' geographical connections,
+            explanation: Homo sapiens have relationships with various geographical locations, such as East Africa, Asia, and Europe, where human evolution occurred and where some of the archaic humans originated from East Africa. These relationships suggest a strong geographical connection between Homo sapiens and these locations. [Data: Relationships (5, 8, 7)]
+        },
+        {
+            summary: Homo sapiens' ancestral relationships,
+            explanation: Homo sapiens have relationships with their ancestors, such as Homo erectus, Australopithecus, and the single female ape. These relationships indicate that Homo sapiens evolved from these ancestors, suggesting their significance in understanding human evolution. [Data: Relationships (6, 4, 3)]
+        },
+        {
+            summary: Homo sapiens' technological advancements,
+            explanation: Homo sapiens have relationships with technological advancements such as cars and guns, which enable them to move faster and defend themselves from a safe distance. These relationships suggest that Homo sapiens have developed these technologies as a result of their large brains and high energy consumption. [Data: Relationships (11)]
+        },
+        {
+            summary: Homo sapiens' relationship with other apes,
+            explanation: Homo sapiens have a relationship with other apes, which have smaller brains that require only 8% of rest-time energy. This relationship suggests a significant difference between Homo sapiens and other apes in terms of brain size and energy consumption. [Data: Relationships (10)]
+        }
+    ]
+}""","117fa4f4-1af4-423a-a37b-c59b7a1f59e6"
+"2","""# East Africa and Human Evolution
+
+The community revolves around East Africa, a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the 'cradle of humanity,' where human evolution continued, and new species emerged, such as Homo sapiens and Australopithecus. Other human species, such as Homo rudolfensis and Homo ergaster, also evolved in this region.
+
+## East Africa as the cradle of humanity
+
+East Africa is the central entity in this community, being the geographical region where human evolution continued, and new species emerged. This region is specifically recognized as the 'cradle of humanity,' indicating its significance in human history. [Data: Entities (13), Relationships (5, 16, 17, 18, +more)]
+
+## Homo sapiens' evolution in East Africa
+
+Homo sapiens, the species to which humans currently belong, originally evolved in East Africa. This indicates a strong geographical connection between the two entities, as Homo sapiens are known to have evolved in this region. [Data: Relationships (5)]
+
+## Australopithecus as an ancestor of Homo sapiens
+
+Australopithecus is an earlier genus of apes from which humans evolved, also known as 'Southern Ape.' Homo sapiens evolved from Australopithecus in East Africa, indicating a crucial role for this region in human evolution. [Data: Relationships (4)]
+
+## Homo rudolfensis and Homo ergaster's evolution in East Africa
+
+Homo rudolfensis and Homo ergaster are human species that evolved in East Africa. These species are uniquely recognized as one of the human species that developed in the region, highlighting the importance of East Africa in human evolution. [Data: Relationships (17, 18)]
+
+## Relationship between Homo rudolfensis and Homo erectus
+
+Homo rudolfensis and Homo erectus are both human species that evolved in different regions. However, the relationship between these species highlights the diversity of human evolution and the various regions where human species developed. [Data: Relationships (32)]""",0,8.5,"East Africa and Human Evolution","The impact severity rating is high due to the crucial role of East Africa in human evolution and the emergence of various human species.","""The community revolves around East Africa, a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the 'cradle of humanity,' where human evolution continued, and new species emerged, such as Homo sapiens and Australopithecus. Other human species, such as Homo rudolfensis and Homo ergaster, also evolved in this region.""","[{'explanation': ""East Africa is the central entity in this community, being the geographical region where human evolution continued, and new species emerged. This region is specifically recognized as the 'cradle of humanity,' indicating its significance in human history. [Data: Entities (13), Relationships (5, 16, 17, 18, +more)]"", 'summary': 'East Africa as the cradle of humanity'}
+ {'explanation': 'Homo sapiens, the species to which humans currently belong, originally evolved in East Africa. This indicates a strong geographical connection between the two entities, as Homo sapiens are known to have evolved in this region. [Data: Relationships (5)]', 'summary': ""Homo sapiens' evolution in East Africa""}
+ {'explanation': ""Australopithecus is an earlier genus of apes from which humans evolved, also known as 'Southern Ape.' Homo sapiens evolved from Australopithecus in East Africa, indicating a crucial role for this region in human evolution. [Data: Relationships (4)]"", 'summary': 'Australopithecus as an ancestor of Homo sapiens'}
+ {'explanation': 'Homo rudolfensis and Homo ergaster are human species that evolved in East Africa. These species are uniquely recognized as one of the human species that developed in the region, highlighting the importance of East Africa in human evolution. [Data: Relationships (17, 18)]', 'summary': ""Homo rudolfensis and Homo ergaster's evolution in East Africa""}
+ {'explanation': 'Homo rudolfensis and Homo erectus are both human species that evolved in different regions. However, the relationship between these species highlights the diversity of human evolution and the various regions where human species developed. [Data: Relationships (32)]', 'summary': 'Relationship between Homo rudolfensis and Homo erectus'}]","""{
+    title: East Africa and Human Evolution,
+    summary: The community revolves around East Africa, a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the 'cradle of humanity,' where human evolution continued, and new species emerged, such as Homo sapiens and Australopithecus. Other human species, such as Homo rudolfensis and Homo ergaster, also evolved in this region.,
+    rating: 8.5,
+    rating_explanation: The impact severity rating is high due to the crucial role of East Africa in human evolution and the emergence of various human species.,
+    findings: [
+        {
+            summary: East Africa as the cradle of humanity,
+            explanation: East Africa is the central entity in this community, being the geographical region where human evolution continued, and new species emerged. This region is specifically recognized as the 'cradle of humanity,' indicating its significance in human history. [Data: Entities (13), Relationships (5, 16, 17, 18, +more)]
+        },
+        {
+            summary: Homo sapiens' evolution in East Africa,
+            explanation: Homo sapiens, the species to which humans currently belong, originally evolved in East Africa. This indicates a strong geographical connection between the two entities, as Homo sapiens are known to have evolved in this region. [Data: Relationships (5)]
+        },
+        {
+            summary: Australopithecus as an ancestor of Homo sapiens,
+            explanation: Australopithecus is an earlier genus of apes from which humans evolved, also known as 'Southern Ape.' Homo sapiens evolved from Australopithecus in East Africa, indicating a crucial role for this region in human evolution. [Data: Relationships (4)]
+        },
+        {
+            summary: Homo rudolfensis and Homo ergaster's evolution in East Africa,
+            explanation: Homo rudolfensis and Homo ergaster are human species that evolved in East Africa. These species are uniquely recognized as one of the human species that developed in the region, highlighting the importance of East Africa in human evolution. [Data: Relationships (17, 18)]
+        },
+        {
+            summary: Relationship between Homo rudolfensis and Homo erectus,
+            explanation: Homo rudolfensis and Homo erectus are both human species that evolved in different regions. However, the relationship between these species highlights the diversity of human evolution and the various regions where human species developed. [Data: Relationships (32)]
+        }
+    ]
+}""","91f4e473-8f4f-4670-b8b7-fad819cefef9"
+"3","""# Great Apes and Their Human Relatives
+
+The community consists of the Great Apes family, which includes humans, chimpanzees, gorillas, and orangutans. Homo sapiens are closely related to chimpanzees, sharing a common ancestor 6 million years ago. The single female ape is the common ancestor of both humans and chimpanzees.
+
+## Human's place in the Great Apes family
+
+Homo sapiens are a member of the Great Apes family, which includes humans, chimpanzees, gorillas, and orangutans. This relationship highlights the significance of shared characteristics and common ancestry among these primates. [Data: Relationships (1, 2, 3)]
+
+## Close relationship between humans and chimpanzees
+
+Humans and chimpanzees share a close evolutionary relationship, with a common ancestor just 6 million years ago. This relationship is crucial in understanding the development of both species. [Data: Relationships (2, 3)]
+
+## The single female ape as the common ancestor
+
+The single female ape is the common ancestor of both humans and chimpanzees, having lived 6 million years ago. This entity represents a critical point in the evolutionary history of these primates. [Data: Entities (44)]
+
+## Great Apes as a collective term
+
+The term 'Great Apes' is used collectively to indicate the close evolutionary relationship among humans, chimpanzees, gorillas, and orangutans. This collective term emphasizes the significance of their shared characteristics and common ancestry. [Data: Entities (39), Relationships (26, 27, 28)]""",0,7.0,"Great Apes and Their Human Relatives","The impact severity rating is high due to the significance of the Great Apes family in understanding human evolution and the potential for conservation efforts.","""The community consists of the Great Apes family, which includes humans, chimpanzees, gorillas, and orangutans. Homo sapiens are closely related to chimpanzees, sharing a common ancestor 6 million years ago. The single female ape is the common ancestor of both humans and chimpanzees.""","[{'explanation': 'Homo sapiens are a member of the Great Apes family, which includes humans, chimpanzees, gorillas, and orangutans. This relationship highlights the significance of shared characteristics and common ancestry among these primates. [Data: Relationships (1, 2, 3)]', 'summary': ""Human's place in the Great Apes family""}
+ {'explanation': 'Humans and chimpanzees share a close evolutionary relationship, with a common ancestor just 6 million years ago. This relationship is crucial in understanding the development of both species. [Data: Relationships (2, 3)]', 'summary': 'Close relationship between humans and chimpanzees'}
+ {'explanation': 'The single female ape is the common ancestor of both humans and chimpanzees, having lived 6 million years ago. This entity represents a critical point in the evolutionary history of these primates. [Data: Entities (44)]', 'summary': 'The single female ape as the common ancestor'}
+ {'explanation': ""The term 'Great Apes' is used collectively to indicate the close evolutionary relationship among humans, chimpanzees, gorillas, and orangutans. This collective term emphasizes the significance of their shared characteristics and common ancestry. [Data: Entities (39), Relationships (26, 27, 28)]"", 'summary': 'Great Apes as a collective term'}]","""{
+    title: Great Apes and Their Human Relatives,
+    summary: The community consists of the Great Apes family, which includes humans, chimpanzees, gorillas, and orangutans. Homo sapiens are closely related to chimpanzees, sharing a common ancestor 6 million years ago. The single female ape is the common ancestor of both humans and chimpanzees.,
+    rating: 7.0,
+    rating_explanation: The impact severity rating is high due to the significance of the Great Apes family in understanding human evolution and the potential for conservation efforts.,
+    findings: [
+        {
+            summary: Human's place in the Great Apes family,
+            explanation: Homo sapiens are a member of the Great Apes family, which includes humans, chimpanzees, gorillas, and orangutans. This relationship highlights the significance of shared characteristics and common ancestry among these primates. [Data: Relationships (1, 2, 3)]
+        },
+        {
+            summary: Close relationship between humans and chimpanzees,
+            explanation: Humans and chimpanzees share a close evolutionary relationship, with a common ancestor just 6 million years ago. This relationship is crucial in understanding the development of both species. [Data: Relationships (2, 3)]
+        },
+        {
+            summary: The single female ape as the common ancestor,
+            explanation: The single female ape is the common ancestor of both humans and chimpanzees, having lived 6 million years ago. This entity represents a critical point in the evolutionary history of these primates. [Data: Entities (44)]
+        },
+        {
+            summary: Great Apes as a collective term,
+            explanation: The term 'Great Apes' is used collectively to indicate the close evolutionary relationship among humans, chimpanzees, gorillas, and orangutans. This collective term emphasizes the significance of their shared characteristics and common ancestry. [Data: Entities (39), Relationships (26, 27, 28)]
+        }
+    ]
+}""","5c70e700-f3b7-4295-9fc1-f4c1a9a10e38"
+"4","""# Human Evolution in Northern Europe and Ancient Human Species
+
+The community consists of Northern Europe, Homo erectus, and Homo neanderthalensis, with relationships between these entities based on their geographical distribution and evolutionary history. Homo sapiens also has a significant relationship with Homo erectus due to their survival duration comparison.
+
+## Northern Europe's influence on Homo neanderthalensis
+
+Northern Europe, as a region with snowy forests, had a substantial impact on the evolution of Homo neanderthalensis. This relationship highlights the importance of environmental factors in human evolution. [Data: Relationships (31)]
+
+## Homo erectus' survival duration
+
+Homo erectus, known as Upright Man, survived for nearly 2 million years, which is longer than Homo sapiens is expected to survive. This comparison highlights the adaptability and resilience of Homo erectus. [Data: Relationships (6)]
+
+## Homo erectus and Homo neanderthalensis' regional evolution
+
+Homo erectus and Homo neanderthalensis evolved in different regions, with Homo erectus originating in East Asia and Homo neanderthalensis in Europe and western Asia. This finding emphasizes the diversity of human species and their adaptations to various environments. [Data: Relationships (33)]
+
+## Homo rudolfensis and Homo erectus' relationship
+
+Homo rudolfensis and Homo erectus both evolved in different regions, showcasing the divergence of human species. This relationship provides insights into the early stages of human evolution. [Data: Relationships (32)]""",0,6.5,"Human Evolution in Northern Europe and Ancient Human Species","The impact severity rating is high due to the significant role these entities play in understanding human evolutionary history.","""The community consists of Northern Europe, Homo erectus, and Homo neanderthalensis, with relationships between these entities based on their geographical distribution and evolutionary history. Homo sapiens also has a significant relationship with Homo erectus due to their survival duration comparison.""","[{'explanation': 'Northern Europe, as a region with snowy forests, had a substantial impact on the evolution of Homo neanderthalensis. This relationship highlights the importance of environmental factors in human evolution. [Data: Relationships (31)]', 'summary': ""Northern Europe's influence on Homo neanderthalensis""}
+ {'explanation': 'Homo erectus, known as Upright Man, survived for nearly 2 million years, which is longer than Homo sapiens is expected to survive. This comparison highlights the adaptability and resilience of Homo erectus. [Data: Relationships (6)]', 'summary': ""Homo erectus' survival duration""}
+ {'explanation': 'Homo erectus and Homo neanderthalensis evolved in different regions, with Homo erectus originating in East Asia and Homo neanderthalensis in Europe and western Asia. This finding emphasizes the diversity of human species and their adaptations to various environments. [Data: Relationships (33)]', 'summary': ""Homo erectus and Homo neanderthalensis' regional evolution""}
+ {'explanation': 'Homo rudolfensis and Homo erectus both evolved in different regions, showcasing the divergence of human species. This relationship provides insights into the early stages of human evolution. [Data: Relationships (32)]', 'summary': ""Homo rudolfensis and Homo erectus' relationship""}]","""{
+    title: Human Evolution in Northern Europe and Ancient Human Species,
+    summary: The community consists of Northern Europe, Homo erectus, and Homo neanderthalensis, with relationships between these entities based on their geographical distribution and evolutionary history. Homo sapiens also has a significant relationship with Homo erectus due to their survival duration comparison.,
+    rating: 6.5,
+    rating_explanation: The impact severity rating is high due to the significant role these entities play in understanding human evolutionary history.,
+    findings: [
+        {
+            summary: Northern Europe's influence on Homo neanderthalensis,
+            explanation: Northern Europe, as a region with snowy forests, had a substantial impact on the evolution of Homo neanderthalensis. This relationship highlights the importance of environmental factors in human evolution. [Data: Relationships (31)]
+        },
+        {
+            summary: Homo erectus' survival duration,
+            explanation: Homo erectus, known as Upright Man, survived for nearly 2 million years, which is longer than Homo sapiens is expected to survive. This comparison highlights the adaptability and resilience of Homo erectus. [Data: Relationships (6)]
+        },
+        {
+            summary: Homo erectus and Homo neanderthalensis' regional evolution,
+            explanation: Homo erectus and Homo neanderthalensis evolved in different regions, with Homo erectus originating in East Asia and Homo neanderthalensis in Europe and western Asia. This finding emphasizes the diversity of human species and their adaptations to various environments. [Data: Relationships (33)]
+        },
+        {
+            summary: Homo rudolfensis and Homo erectus' relationship,
+            explanation: Homo rudolfensis and Homo erectus both evolved in different regions, showcasing the divergence of human species. This relationship provides insights into the early stages of human evolution. [Data: Relationships (32)]
+        }
+    ]
+}""","a9e215e5-5035-444e-b6de-79178f73243e"

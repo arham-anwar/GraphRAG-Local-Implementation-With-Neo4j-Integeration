@@ -1,0 +1,14 @@
+2024-07-23 07:54:45.166+0000 INFO  Running in daemon mode, all <Console> appenders will be suppressed:
+2024-07-23 07:54:45.169+0000 INFO  Removing console appender 'ConsoleAppender' with target 'SYSTEM_OUT'.
+2024-07-23 07:54:45.169+0000 INFO  Logging config in use: File '/Users/arham/Downloads/Projects - Github/GraphRAG-GROQ/neo4j-community-5.21.2/conf/user-logs.xml'
+2024-07-23 07:54:45.176+0000 INFO  Starting...
+2024-07-23 07:54:46.272+0000 INFO  This instance is ServerId{b7a1ca6c} (b7a1ca6c-eda2-490f-aa77-5d8ae4a5fcfa)
+2024-07-23 07:54:47.227+0000 INFO  ======== Neo4j 5.21.2 ========
+2024-07-23 07:54:49.621+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2024-07-23 07:54:49.658+0000 INFO  Bolt enabled on localhost:7687.
+2024-07-23 07:54:50.104+0000 INFO  HTTP enabled on localhost:7474.
+2024-07-23 07:54:50.104+0000 INFO  Remote interface available at http://localhost:7474/
+2024-07-23 07:54:50.106+0000 INFO  id: F473889DB2758878EC045D8B5872EA5E2A18E9CBEE34B1D91C77375FB9164C9F
+2024-07-23 07:54:50.106+0000 INFO  name: system
+2024-07-23 07:54:50.106+0000 INFO  creationDate: 2024-07-23T07:54:48.229Z
+2024-07-23 07:54:50.106+0000 INFO  Started.

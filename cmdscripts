@@ -1,0 +1,10 @@
+export GRAPHRAG_API_KEY=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
+
+python -m graphrag.index --init --root .
+
+
+
+curl -0 https://dist.neo4j.org/neo4j-community-5.21.2-unix.tar.gz
+tar -×f ne04j-community-5.21.2-unix.tar.gz
+
+cd ne04j-community-5.21.2

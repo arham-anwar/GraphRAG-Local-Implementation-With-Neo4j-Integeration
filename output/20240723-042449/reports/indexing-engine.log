@@ -1,0 +1,496 @@
+04:24:49,105 graphrag.config.read_dotenv INFO Loading pipeline .env file
+04:24:49,108 graphrag.index.cli INFO using default configuration: {
+    "llm": {
+        "api_key": "REDACTED, length 56",
+        "type": "openai_chat",
+        "model": "mixtral-8x7b-32768",
+        "max_tokens": 4000,
+        "request_timeout": 180.0,
+        "api_base": "https://api.groq.com/openai/v1",
+        "api_version": null,
+        "proxy": null,
+        "cognitive_services_endpoint": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 2,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 25
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": ".",
+    "reporting": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/reports",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/artifacts",
+        "storage_account_blob_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_embedding",
+            "model": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:1234/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": null,
+        "strategy": null
+    },
+    "chunks": {
+        "size": 300,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null
+    },
+    "snapshots": {
+        "graphml": false,
+        "raw_entities": false,
+        "top_level_nodes": false
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": null,
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+04:24:49,110 graphrag.index.create_pipeline_config INFO skipping workflows 
+04:24:49,123 graphrag.index.run INFO Running pipeline
+04:24:49,123 graphrag.index.storage.file_pipeline_storage INFO Creating file storage at output/20240723-042449/artifacts
+04:24:49,123 graphrag.index.input.load_input INFO loading input from root_dir=input
+04:24:49,123 graphrag.index.input.load_input INFO using file storage for input
+04:24:49,124 graphrag.index.storage.file_pipeline_storage INFO search input for files matching .*\.txt$
+04:24:49,124 graphrag.index.input.text INFO found text files from input, found [('book.txt', {})]
+04:24:49,129 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_base_extracted_entities', 'create_summarized_entities', 'create_base_entity_graph', 'create_final_entities', 'create_final_nodes', 'create_final_communities', 'join_text_units_to_entity_ids', 'create_final_relationships', 'join_text_units_to_relationship_ids', 'create_final_community_reports', 'create_final_text_units', 'create_base_documents', 'create_final_documents']
+04:24:49,129 graphrag.index.run INFO Final # of rows loaded: 1
+04:24:49,282 graphrag.index.run INFO Running workflow: create_base_text_units...
+04:24:49,282 graphrag.index.run INFO dependencies for create_base_text_units: []
+04:24:49,286 datashaper.workflow.workflow INFO executing verb orderby
+04:24:49,292 datashaper.workflow.workflow INFO executing verb zip
+04:24:49,295 datashaper.workflow.workflow INFO executing verb aggregate_override
+04:24:49,301 datashaper.workflow.workflow INFO executing verb chunk
+04:24:49,481 datashaper.workflow.workflow INFO executing verb select
+04:24:49,485 datashaper.workflow.workflow INFO executing verb unroll
+04:24:49,492 datashaper.workflow.workflow INFO executing verb rename
+04:24:49,495 datashaper.workflow.workflow INFO executing verb genid
+04:24:49,499 datashaper.workflow.workflow INFO executing verb unzip
+04:24:49,503 datashaper.workflow.workflow INFO executing verb copy
+04:24:49,507 datashaper.workflow.workflow INFO executing verb filter
+04:24:49,516 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_text_units.parquet
+04:24:49,717 graphrag.index.run INFO Running workflow: create_base_extracted_entities...
+04:24:49,717 graphrag.index.run INFO dependencies for create_base_extracted_entities: ['create_base_text_units']
+04:24:49,717 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+04:24:49,752 datashaper.workflow.workflow INFO executing verb entity_extract
+04:24:49,755 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=https://api.groq.com/openai/v1
+04:24:49,798 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for mixtral-8x7b-32768: TPM=0, RPM=0
+04:24:49,798 graphrag.index.llm.load_llm INFO create concurrency limiter for mixtral-8x7b-32768: 25
+04:24:49,823 datashaper.workflow.workflow INFO executing verb merge_graphs
+04:24:49,833 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_extracted_entities.parquet
+04:24:50,5 graphrag.index.run INFO Running workflow: create_summarized_entities...
+04:24:50,5 graphrag.index.run INFO dependencies for create_summarized_entities: ['create_base_extracted_entities']
+04:24:50,5 graphrag.index.run INFO read table from storage: create_base_extracted_entities.parquet
+04:24:50,17 datashaper.workflow.workflow INFO executing verb summarize_descriptions
+04:24:50,666 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,673 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6180000000167638. input_tokens=155, output_tokens=29
+04:24:50,675 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,676 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,677 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,678 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,680 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,682 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6019999999552965. input_tokens=168, output_tokens=59
+04:24:50,683 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6130000000121072. input_tokens=176, output_tokens=40
+04:24:50,684 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6430000000400469. input_tokens=212, output_tokens=75
+04:24:50,685 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6099999999860302. input_tokens=184, output_tokens=64
+04:24:50,686 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6240000000107102. input_tokens=185, output_tokens=56
+04:24:50,687 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,688 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6159999999799766. input_tokens=183, output_tokens=49
+04:24:50,688 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,690 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6330000000307336. input_tokens=169, output_tokens=46
+04:24:50,745 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,747 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6969999999855645. input_tokens=178, output_tokens=50
+04:24:50,752 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,753 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.7010000000009313. input_tokens=156, output_tokens=31
+04:24:50,754 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,755 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6900000000023283. input_tokens=182, output_tokens=47
+04:24:50,767 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,769 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.6919999999809079. input_tokens=172, output_tokens=76
+04:24:50,786 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,788 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.7540000000153668. input_tokens=334, output_tokens=137
+04:24:50,823 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,825 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.7650000000139698. input_tokens=203, output_tokens=43
+04:24:50,886 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,887 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.8429999999934807. input_tokens=193, output_tokens=65
+04:24:50,898 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,899 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.8520000000135042. input_tokens=187, output_tokens=59
+04:24:50,909 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:50,910 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 0.8429999999934807. input_tokens=165, output_tokens=52
+04:24:50,917 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_summarized_entities.parquet
+04:24:51,158 graphrag.index.run INFO Running workflow: create_base_entity_graph...
+04:24:51,158 graphrag.index.run INFO dependencies for create_base_entity_graph: ['create_summarized_entities']
+04:24:51,158 graphrag.index.run INFO read table from storage: create_summarized_entities.parquet
+04:24:51,171 datashaper.workflow.workflow INFO executing verb cluster_graph
+04:24:51,191 datashaper.workflow.workflow INFO executing verb select
+04:24:51,192 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_entity_graph.parquet
+04:24:51,369 graphrag.index.run INFO Running workflow: create_final_entities...
+04:24:51,369 graphrag.index.run INFO dependencies for create_final_entities: ['create_base_entity_graph']
+04:24:51,370 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+04:24:51,384 datashaper.workflow.workflow INFO executing verb unpack_graph
+04:24:51,393 datashaper.workflow.workflow INFO executing verb rename
+04:24:51,401 datashaper.workflow.workflow INFO executing verb select
+04:24:51,408 datashaper.workflow.workflow INFO executing verb dedupe
+04:24:51,417 datashaper.workflow.workflow INFO executing verb rename
+04:24:51,424 datashaper.workflow.workflow INFO executing verb filter
+04:24:51,440 datashaper.workflow.workflow INFO executing verb text_split
+04:24:51,449 datashaper.workflow.workflow INFO executing verb drop
+04:24:51,457 datashaper.workflow.workflow INFO executing verb merge
+04:24:51,474 datashaper.workflow.workflow INFO executing verb text_embed
+04:24:51,476 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:1234/v1
+04:24:51,503 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf: TPM=0, RPM=0
+04:24:51,503 graphrag.index.llm.load_llm INFO create concurrency limiter for nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf: 25
+04:24:51,510 graphrag.index.verbs.text.embed.strategies.openai INFO embedding 87 inputs via 87 snippets using 6 batches. max_batch_size=16, max_tokens=8191
+04:27:51,552 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"WISE OLD MATRIARCHS":"Wise old matriarchs refers to respected and experienced older female leaders, indicating a group of individuals."', '"PREHISTORIC HUMANS":"Prehistoric humans are early ancestors of modern humans, characterized as insignificant animals with no special impact on their environment."', '"DESCENDANTS OF PREHISTORIC HUMANS":"Descendants of prehistoric humans are individuals who are related to prehistoric humans and have achieved significant milestones in history."', '"BIOLOGISTS":"Biologists are professionals who classify organisms into species based on their mating habits and genetic traits."', '"HORSES AND DONKEYS":"Horses and donkeys are two distinct species that share a recent common ancestor but show little sexual interest in each other, resulting in sterile offspring."', '"BULLDOG AND SPANIEL":"Bulldog and spaniel are members of the same species, sharing the same DNA pool and indicating a group of related animals."', '"DONKEYS":"Donkeys are a distinct species that cannot produce fertile offspring with horses."', '"HORSES":"Horses are a distinct species that cannot produce fertile offspring with donkeys."', '"MULES":"Mules are the sterile offspring resulting from the mating of donkeys and horses."', '"BULLDOGS":"Bulldogs are a species that can interbreed with other species within the same genus, such as spaniels."', '"SPANIELS":"Spaniels are a species that can interbreed with other species within the same genus, such as bulldogs."', '"LIONS":"Lions are a species within the genus Panthera, which also includes tigers, leopards, and jaguars."', '"TIGERS":"Tigers are a species within the genus Panthera, which also includes lions, leopards, and jaguars."', '"LEOPARDS":"Leopards are a species within the genus Panthera, which also includes lions, tigers, and jaguars."', '"JAGUARS":"Jaguars are a species within the genus Panthera, which also includes lions, tigers, and leopards."', '"GENUS":"Genus is a category used by biologists to group organisms that have evolved from a common ancestor."']}
+04:27:51,555 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"THE BIG BANG":"The Big Bang is the name given to the event where matter, energy, time, and space came into being."', '"PHYSICS":"Physics is the study of matter, energy, time, and space, which came into being in the Big Bang."', '"CHEMISTRY":"Chemistry is the study of atoms and molecules, which came into being 300,000 years after the Big Bang."', '"BIOLOGY":"Biology is the study of organisms, which first appeared on Earth about 3.8 billion years ago."', '"HISTORY":"History refers to the development of human cultures, which started about 70,000 years ago."', '"EARTH":"Earth is the planet where life first appeared and where human cultures developed."', '"HOMO SAPIENS":Homo sapiens, also known as modern humans or simply Sapiens, is a species of the genus Homo and a member of the family of great apes. It is characterized by its large brain and high energy consumption at rest. Homo sapiens formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. As the species that includes wise men, Homo sapiens has kept a secret about its uncivilized cousins and former siblings. However, the future of Homo sapiens is uncertain, with experts suggesting that they may not survive for 2 million years, given the instability of their existence a thousand years from now.', '"COGNITIVE REVOLUTION":"The Cognitive Revolution is an event that started history about 70,000 years ago."', '"AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an event that sped up history about 12,000 years ago."', '"SCIENTIFIC REVOLUTION":"The Scientific Revolution is an event that may end history and start something completely different, getting underway only 500 years ago."', '"THE AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an historical event that occurred approximately 12,000 years ago and significantly sped up human progress."', '"THE SCIENTIFIC REVOLUTION":"The Scientific Revolution is an historical event that began 500 years ago and may have marked the end of history and the beginning of something completely different."', '"HUMANS":Humans are a species that have been in existence for approximately 2.5 million years, characterized by intricate hand movements and tool production, an upright gait, and significant progress during the Agricultural and Scientific Revolutions. They are distinguished by their extraordinarily large brains compared to other animals, with an average brain size ranging from 1,200-1,400 cubic centimeters.', '"EAST AFRICA":East Africa is a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the "cradle of humanity," where human evolution continued, and new species emerged. More specifically, East Africa is identified as the original homeland of both Homo sapiens and Australopithecus.', '"MODERN HUMANS":"Modern humans are a species that first appeared approximately 2.5 million years ago and share similarities with other primates such as chimpanzees, baboons, and elephants."', '"LOCAL BEAUTY":"The local beauty refers to the appealing natural or man-made features of a place, indicating a geographical location."']}
+04:27:51,556 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"FAMILIES":"Families are categories used by biologists to group genera, such as cats, dogs, and elephants."', '"LEO":"Leo is a species of the genus Panthera, and a member of the family of cats."', '"PANTHERA":"Panthera is a genus that includes lions, leopards, jaguars, and tigers."', '"HOMO":"Homo is a genus that includes modern humans and several extinct species of archaic humans."', '"CATS":"Cats is a family that includes lions, cheetahs, house cats, and other feline species."', '"DOGS":"Dogs is a family that includes wolves, foxes, jackals, and other canine species."', '"ELEPHANTS":"Elephants is a family that includes elephants, mammoths, mastodons, and other proboscidean species."', '"GREAT APES":The entity "Great Apes" refers to a family of primates that includes humans, chimpanzees, gorillas, and orangutans. This term, "Great Apes," is used collectively to indicate their close evolutionary relationship, highlighting the significance of their shared characteristics and common ancestry.', '"CHIMPANZEES":Chimpanzees are one of the closest living relatives to humans, sharing a common ancestor just 6 million years ago. They are specifically the closest living relatives of Homo sapiens, also sharing a common ancestor that dates back 6 million years.', '"FELINES"', '"GORILLAS":"Gorillas are close living relatives to humans, sharing a common ancestry with them."', '"ORANG-UTANS":"Orang-utans are close living relatives to humans, sharing a common ancestry with them."', '"SINGLE FEMALE APE":"The single female ape is the common ancestor of both chimpanzees and humans, having lived 6 million years ago."', '"AUSTRALOPITHECUS":"Australopithecus is an earlier genus of apes from which humans evolved, also known as \'Southern Ape\'."', '"NORTH AFRICA":"North Africa is mentioned as one of the areas settled by some of the archaic humans from East Africa."', '"EUROPE":Europe is a continent where human evolution occurred and it is also identified as one of the areas settled by some of the archaic humans originating from East Africa.']}
+04:27:51,556 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"MODERN SAPIENS":Modern Sapiens, also known as current humans, are characterized by their brain size which averages between 1,200 to 1,400 cubic centimeters. This measurement distinguishes them as a specific group of entities within the human species.', '"NEANDERTHAL":"Neanderthal refers to an extinct species of human with a larger brain size than Modern Sapiens.">', '"BRAIN SIZE":"Brain Size refers to the volume of the human brain, which has increased significantly over time.">', '"MAMMALS":"Mammals are a group of animals, with an average brain size of 200 cubic centimeters for those weighing sixty kilograms."', '"EARLIEST MEN AND WOMEN":"Earliest Men and Women are a group of early humans who lived 2.5 million years ago and had brains of about 600 cubic centimeters."', '"NEANDERTHALS":"Neanderthals are a group of early humans with brains even larger than Modern Sapiens."', '"FELINE FAMILY":"Feline Family is a group of animals, specifically cats, who have not developed large brains for complex tasks like calculus."', '"GENUS HOMO":"Genus Homo is the only group in the entire animal kingdom to have come up with massive thinking machines, referring to large brains."', '"THE BRAIN":"The brain is a significant organ in Homo sapiens, accounting for 2-3% of total body weight but consuming 25% of the body\'s energy at rest."', '"OTHER APES":"Other apes, compared to Homo sapiens, have smaller brains that require only 8% of rest-time energy."', '"ARCHAIC HUMANS":"Archaic humans paid for their large brains with increased time spent searching for food and muscle atrophy."', '"CHIMPANZEE":"Chimpanzee is an example of an ape that can physically overpower a Homo sapiens but cannot win an argument."', '"CARS AND GUNS":"Cars and guns are recent technological advancements that enable Homo sapiens to move faster and defend themselves from a safe distance."', '"HUMAN NEURAL NETWORKS":"Human Neural Networks refers to the complex network of neurons in the human brain that have been growing and evolving over time."', '"INT KNIVES AND POINTED STICKS":"Int knives and pointed sticks are simple tools made by early humans using the increased concentration of nerves and finely tuned muscles in their hands."', '"2.5 MILLION YEARS AGO":"2.5 million years ago marks the first evidence of tool production by ancient humans."']}
+04:27:51,557 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ASIA":Asia is a continent where human evolution occurred and is mentioned as one of the areas settled by some of the archaic humans originating from East Africa.', '"INDONESIA":Indonesia is a region known for its steaming jungles, where human populations have evolved distinct traits to adapt to the unique environment. This description differentiates Indonesia from northern Europe, highlighting the contrasting survival requirements in these two regions.', '"NORTHERN EUROPE":"Northern Europe is a region with snowy forests, where human populations evolved distinct traits for survival."', '"HOMO RUDOLFENSIS":Homo rudolfensis, also known as "Man from Lake Rudolf," is a human species that evolved in East Africa. This species is uniquely identified as one of the human species that developed in the region.', '"HOMO ERECTUS":Homo erectus, also known as "Upright Man," is a human species that evolved in East Asia and survived for close to 2 million years. This ancient species is recognized for its significant adaptation of walking upright, making it a crucial part of human evolutionary history.', '"HOMO NEANDERTHALENSIS":"Homo neanderthalensis, or Neanderthals, is a human species that evolved in Europe and western Asia, well-adapted to the cold climate of Ice Age western Eurasia."', '"HOMO SOLOENSIS":Homo soloensis, also known as the "Man from the Solo Valley" or "Java Man," was an ancient human species that lived on the island of Java, Indonesia. This species was adapted to life in the tropics.', '"JAVA":"Java is an island in Indonesia where Homo soloensis, \'Man from the Solo Valley\', lived."', '"FLORES":Flores is a small Indonesian island that is known for the unique evolution of a dwarf human species, Homo oresiensis. This island was the site where archaic humans underwent a process of dwarfing, resulting in the distinct species of Homo oresiensis.', '"HOMO FLORESIENSIS":"Homo floresiensis, also known as Flores dwarves, is a unique ancient human species that reached a maximum height of one meter and weighed no more than twenty-five kilograms."', '"HOMO ORESIENSIS":"Homo oresiensis is a unique species of dwarf humans that reached a maximum height of one metre and weighed no more than twenty-five kilograms, capable of producing stone tools and hunting."', '"HOMO DENISOVA":"Homo denisova is a previously unknown human species, discovered through a fossilised finger bone in the Denisova Cave in Siberia."', '"DENISOVA CAVE":"Denisova Cave is a location in Siberia where a fossilised finger bone of a previously unknown human species, Homo denisova, was discovered."', '"HOMO ERGASTER":Homo ergaster, also known as "Working Man," is a human species that evolved in East Africa. This species is uniquely recognized as one of the human species that developed in the same region.', '"HUMAN SPECIES":"Human Species refers to the different types of humans that have existed over time, including several that coexisted.">', '"EARLY MEN AND WOMEN":"Early Men and Women refers to the first humans that existed, around 2.5 million years ago, with a brain size of about 600 cubic centimeters.">']}
+04:27:51,558 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ARCHAEOLOGISTS":"Archaeologists are professionals who study human history by analyzing artifacts and other physical remains."', '"SOPHISTICATED TOOLS":"Sophisticated Tools refer to the complex tools that humans can produce and use due to the increased concentration of nerves and finely tuned muscles in their hands."', '"WALKING UPRIGHT":"Walking Upright is a significant trait of humans that allows them to scan the environment and frees their hands for other purposes, leading to the evolution of intricate hand tasks and tool production."', '"NATURAL SELECTION":"Natural Selection is a process that leads to evolutionary pressure and the development of specific traits in organisms.">', '"PRIMATE ANCESTORS":"Primate Ancestors refer to the early ancestors of humans, who walked on all fours and had smaller heads.">', '"SEA":"The Sea is a geographical feature that supported the large cranium of humans as they adjusted to an upright position.">', '"BABIES":"Babies refers to the offspring of humans, whose heads were getting bigger just as the birth canal was constricting due to narrower hips.">']}
+04:27:53,269 httpx INFO HTTP Request: POST http://localhost:1234/v1/embeddings "HTTP/1.1 200 OK"
+04:27:53,306 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 1 retries took 0.2019999999902211. input_tokens=223, output_tokens=0
+04:27:53,833 httpx INFO HTTP Request: POST http://localhost:1234/v1/embeddings "HTTP/1.1 200 OK"
+04:27:53,892 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 1 retries took 0.39100000000325963. input_tokens=480, output_tokens=0
+04:30:52,712 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"THE BIG BANG":"The Big Bang is the name given to the event where matter, energy, time, and space came into being."', '"PHYSICS":"Physics is the study of matter, energy, time, and space, which came into being in the Big Bang."', '"CHEMISTRY":"Chemistry is the study of atoms and molecules, which came into being 300,000 years after the Big Bang."', '"BIOLOGY":"Biology is the study of organisms, which first appeared on Earth about 3.8 billion years ago."', '"HISTORY":"History refers to the development of human cultures, which started about 70,000 years ago."', '"EARTH":"Earth is the planet where life first appeared and where human cultures developed."', '"HOMO SAPIENS":Homo sapiens, also known as modern humans or simply Sapiens, is a species of the genus Homo and a member of the family of great apes. It is characterized by its large brain and high energy consumption at rest. Homo sapiens formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. As the species that includes wise men, Homo sapiens has kept a secret about its uncivilized cousins and former siblings. However, the future of Homo sapiens is uncertain, with experts suggesting that they may not survive for 2 million years, given the instability of their existence a thousand years from now.', '"COGNITIVE REVOLUTION":"The Cognitive Revolution is an event that started history about 70,000 years ago."', '"AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an event that sped up history about 12,000 years ago."', '"SCIENTIFIC REVOLUTION":"The Scientific Revolution is an event that may end history and start something completely different, getting underway only 500 years ago."', '"THE AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an historical event that occurred approximately 12,000 years ago and significantly sped up human progress."', '"THE SCIENTIFIC REVOLUTION":"The Scientific Revolution is an historical event that began 500 years ago and may have marked the end of history and the beginning of something completely different."', '"HUMANS":Humans are a species that have been in existence for approximately 2.5 million years, characterized by intricate hand movements and tool production, an upright gait, and significant progress during the Agricultural and Scientific Revolutions. They are distinguished by their extraordinarily large brains compared to other animals, with an average brain size ranging from 1,200-1,400 cubic centimeters.', '"EAST AFRICA":East Africa is a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the "cradle of humanity," where human evolution continued, and new species emerged. More specifically, East Africa is identified as the original homeland of both Homo sapiens and Australopithecus.', '"MODERN HUMANS":"Modern humans are a species that first appeared approximately 2.5 million years ago and share similarities with other primates such as chimpanzees, baboons, and elephants."', '"LOCAL BEAUTY":"The local beauty refers to the appealing natural or man-made features of a place, indicating a geographical location."']}
+04:30:52,918 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"WISE OLD MATRIARCHS":"Wise old matriarchs refers to respected and experienced older female leaders, indicating a group of individuals."', '"PREHISTORIC HUMANS":"Prehistoric humans are early ancestors of modern humans, characterized as insignificant animals with no special impact on their environment."', '"DESCENDANTS OF PREHISTORIC HUMANS":"Descendants of prehistoric humans are individuals who are related to prehistoric humans and have achieved significant milestones in history."', '"BIOLOGISTS":"Biologists are professionals who classify organisms into species based on their mating habits and genetic traits."', '"HORSES AND DONKEYS":"Horses and donkeys are two distinct species that share a recent common ancestor but show little sexual interest in each other, resulting in sterile offspring."', '"BULLDOG AND SPANIEL":"Bulldog and spaniel are members of the same species, sharing the same DNA pool and indicating a group of related animals."', '"DONKEYS":"Donkeys are a distinct species that cannot produce fertile offspring with horses."', '"HORSES":"Horses are a distinct species that cannot produce fertile offspring with donkeys."', '"MULES":"Mules are the sterile offspring resulting from the mating of donkeys and horses."', '"BULLDOGS":"Bulldogs are a species that can interbreed with other species within the same genus, such as spaniels."', '"SPANIELS":"Spaniels are a species that can interbreed with other species within the same genus, such as bulldogs."', '"LIONS":"Lions are a species within the genus Panthera, which also includes tigers, leopards, and jaguars."', '"TIGERS":"Tigers are a species within the genus Panthera, which also includes lions, leopards, and jaguars."', '"LEOPARDS":"Leopards are a species within the genus Panthera, which also includes lions, tigers, and jaguars."', '"JAGUARS":"Jaguars are a species within the genus Panthera, which also includes lions, tigers, and leopards."', '"GENUS":"Genus is a category used by biologists to group organisms that have evolved from a common ancestor."']}
+04:30:53,356 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"ASIA":Asia is a continent where human evolution occurred and is mentioned as one of the areas settled by some of the archaic humans originating from East Africa.', '"INDONESIA":Indonesia is a region known for its steaming jungles, where human populations have evolved distinct traits to adapt to the unique environment. This description differentiates Indonesia from northern Europe, highlighting the contrasting survival requirements in these two regions.', '"NORTHERN EUROPE":"Northern Europe is a region with snowy forests, where human populations evolved distinct traits for survival."', '"HOMO RUDOLFENSIS":Homo rudolfensis, also known as "Man from Lake Rudolf," is a human species that evolved in East Africa. This species is uniquely identified as one of the human species that developed in the region.', '"HOMO ERECTUS":Homo erectus, also known as "Upright Man," is a human species that evolved in East Asia and survived for close to 2 million years. This ancient species is recognized for its significant adaptation of walking upright, making it a crucial part of human evolutionary history.', '"HOMO NEANDERTHALENSIS":"Homo neanderthalensis, or Neanderthals, is a human species that evolved in Europe and western Asia, well-adapted to the cold climate of Ice Age western Eurasia."', '"HOMO SOLOENSIS":Homo soloensis, also known as the "Man from the Solo Valley" or "Java Man," was an ancient human species that lived on the island of Java, Indonesia. This species was adapted to life in the tropics.', '"JAVA":"Java is an island in Indonesia where Homo soloensis, \'Man from the Solo Valley\', lived."', '"FLORES":Flores is a small Indonesian island that is known for the unique evolution of a dwarf human species, Homo oresiensis. This island was the site where archaic humans underwent a process of dwarfing, resulting in the distinct species of Homo oresiensis.', '"HOMO FLORESIENSIS":"Homo floresiensis, also known as Flores dwarves, is a unique ancient human species that reached a maximum height of one meter and weighed no more than twenty-five kilograms."', '"HOMO ORESIENSIS":"Homo oresiensis is a unique species of dwarf humans that reached a maximum height of one metre and weighed no more than twenty-five kilograms, capable of producing stone tools and hunting."', '"HOMO DENISOVA":"Homo denisova is a previously unknown human species, discovered through a fossilised finger bone in the Denisova Cave in Siberia."', '"DENISOVA CAVE":"Denisova Cave is a location in Siberia where a fossilised finger bone of a previously unknown human species, Homo denisova, was discovered."', '"HOMO ERGASTER":Homo ergaster, also known as "Working Man," is a human species that evolved in East Africa. This species is uniquely recognized as one of the human species that developed in the same region.', '"HUMAN SPECIES":"Human Species refers to the different types of humans that have existed over time, including several that coexisted.">', '"EARLY MEN AND WOMEN":"Early Men and Women refers to the first humans that existed, around 2.5 million years ago, with a brain size of about 600 cubic centimeters.">']}
+04:30:53,359 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"MODERN SAPIENS":Modern Sapiens, also known as current humans, are characterized by their brain size which averages between 1,200 to 1,400 cubic centimeters. This measurement distinguishes them as a specific group of entities within the human species.', '"NEANDERTHAL":"Neanderthal refers to an extinct species of human with a larger brain size than Modern Sapiens.">', '"BRAIN SIZE":"Brain Size refers to the volume of the human brain, which has increased significantly over time.">', '"MAMMALS":"Mammals are a group of animals, with an average brain size of 200 cubic centimeters for those weighing sixty kilograms."', '"EARLIEST MEN AND WOMEN":"Earliest Men and Women are a group of early humans who lived 2.5 million years ago and had brains of about 600 cubic centimeters."', '"NEANDERTHALS":"Neanderthals are a group of early humans with brains even larger than Modern Sapiens."', '"FELINE FAMILY":"Feline Family is a group of animals, specifically cats, who have not developed large brains for complex tasks like calculus."', '"GENUS HOMO":"Genus Homo is the only group in the entire animal kingdom to have come up with massive thinking machines, referring to large brains."', '"THE BRAIN":"The brain is a significant organ in Homo sapiens, accounting for 2-3% of total body weight but consuming 25% of the body\'s energy at rest."', '"OTHER APES":"Other apes, compared to Homo sapiens, have smaller brains that require only 8% of rest-time energy."', '"ARCHAIC HUMANS":"Archaic humans paid for their large brains with increased time spent searching for food and muscle atrophy."', '"CHIMPANZEE":"Chimpanzee is an example of an ape that can physically overpower a Homo sapiens but cannot win an argument."', '"CARS AND GUNS":"Cars and guns are recent technological advancements that enable Homo sapiens to move faster and defend themselves from a safe distance."', '"HUMAN NEURAL NETWORKS":"Human Neural Networks refers to the complex network of neurons in the human brain that have been growing and evolving over time."', '"INT KNIVES AND POINTED STICKS":"Int knives and pointed sticks are simple tools made by early humans using the increased concentration of nerves and finely tuned muscles in their hands."', '"2.5 MILLION YEARS AGO":"2.5 million years ago marks the first evidence of tool production by ancient humans."']}
+04:30:56,178 httpx INFO HTTP Request: POST http://localhost:1234/v1/embeddings "HTTP/1.1 200 OK"
+04:30:56,252 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 2 retries took 0.47299999999813735. input_tokens=692, output_tokens=0
+04:30:56,643 httpx INFO HTTP Request: POST http://localhost:1234/v1/embeddings "HTTP/1.1 200 OK"
+04:30:56,709 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 2 retries took 0.4349999999976717. input_tokens=518, output_tokens=0
+04:33:55,193 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"WISE OLD MATRIARCHS":"Wise old matriarchs refers to respected and experienced older female leaders, indicating a group of individuals."', '"PREHISTORIC HUMANS":"Prehistoric humans are early ancestors of modern humans, characterized as insignificant animals with no special impact on their environment."', '"DESCENDANTS OF PREHISTORIC HUMANS":"Descendants of prehistoric humans are individuals who are related to prehistoric humans and have achieved significant milestones in history."', '"BIOLOGISTS":"Biologists are professionals who classify organisms into species based on their mating habits and genetic traits."', '"HORSES AND DONKEYS":"Horses and donkeys are two distinct species that share a recent common ancestor but show little sexual interest in each other, resulting in sterile offspring."', '"BULLDOG AND SPANIEL":"Bulldog and spaniel are members of the same species, sharing the same DNA pool and indicating a group of related animals."', '"DONKEYS":"Donkeys are a distinct species that cannot produce fertile offspring with horses."', '"HORSES":"Horses are a distinct species that cannot produce fertile offspring with donkeys."', '"MULES":"Mules are the sterile offspring resulting from the mating of donkeys and horses."', '"BULLDOGS":"Bulldogs are a species that can interbreed with other species within the same genus, such as spaniels."', '"SPANIELS":"Spaniels are a species that can interbreed with other species within the same genus, such as bulldogs."', '"LIONS":"Lions are a species within the genus Panthera, which also includes tigers, leopards, and jaguars."', '"TIGERS":"Tigers are a species within the genus Panthera, which also includes lions, leopards, and jaguars."', '"LEOPARDS":"Leopards are a species within the genus Panthera, which also includes lions, tigers, and jaguars."', '"JAGUARS":"Jaguars are a species within the genus Panthera, which also includes lions, tigers, and leopards."', '"GENUS":"Genus is a category used by biologists to group organisms that have evolved from a common ancestor."']}
+04:33:55,244 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"THE BIG BANG":"The Big Bang is the name given to the event where matter, energy, time, and space came into being."', '"PHYSICS":"Physics is the study of matter, energy, time, and space, which came into being in the Big Bang."', '"CHEMISTRY":"Chemistry is the study of atoms and molecules, which came into being 300,000 years after the Big Bang."', '"BIOLOGY":"Biology is the study of organisms, which first appeared on Earth about 3.8 billion years ago."', '"HISTORY":"History refers to the development of human cultures, which started about 70,000 years ago."', '"EARTH":"Earth is the planet where life first appeared and where human cultures developed."', '"HOMO SAPIENS":Homo sapiens, also known as modern humans or simply Sapiens, is a species of the genus Homo and a member of the family of great apes. It is characterized by its large brain and high energy consumption at rest. Homo sapiens formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. As the species that includes wise men, Homo sapiens has kept a secret about its uncivilized cousins and former siblings. However, the future of Homo sapiens is uncertain, with experts suggesting that they may not survive for 2 million years, given the instability of their existence a thousand years from now.', '"COGNITIVE REVOLUTION":"The Cognitive Revolution is an event that started history about 70,000 years ago."', '"AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an event that sped up history about 12,000 years ago."', '"SCIENTIFIC REVOLUTION":"The Scientific Revolution is an event that may end history and start something completely different, getting underway only 500 years ago."', '"THE AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an historical event that occurred approximately 12,000 years ago and significantly sped up human progress."', '"THE SCIENTIFIC REVOLUTION":"The Scientific Revolution is an historical event that began 500 years ago and may have marked the end of history and the beginning of something completely different."', '"HUMANS":Humans are a species that have been in existence for approximately 2.5 million years, characterized by intricate hand movements and tool production, an upright gait, and significant progress during the Agricultural and Scientific Revolutions. They are distinguished by their extraordinarily large brains compared to other animals, with an average brain size ranging from 1,200-1,400 cubic centimeters.', '"EAST AFRICA":East Africa is a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the "cradle of humanity," where human evolution continued, and new species emerged. More specifically, East Africa is identified as the original homeland of both Homo sapiens and Australopithecus.', '"MODERN HUMANS":"Modern humans are a species that first appeared approximately 2.5 million years ago and share similarities with other primates such as chimpanzees, baboons, and elephants."', '"LOCAL BEAUTY":"The local beauty refers to the appealing natural or man-made features of a place, indicating a geographical location."']}
+04:36:59,486 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"WISE OLD MATRIARCHS":"Wise old matriarchs refers to respected and experienced older female leaders, indicating a group of individuals."', '"PREHISTORIC HUMANS":"Prehistoric humans are early ancestors of modern humans, characterized as insignificant animals with no special impact on their environment."', '"DESCENDANTS OF PREHISTORIC HUMANS":"Descendants of prehistoric humans are individuals who are related to prehistoric humans and have achieved significant milestones in history."', '"BIOLOGISTS":"Biologists are professionals who classify organisms into species based on their mating habits and genetic traits."', '"HORSES AND DONKEYS":"Horses and donkeys are two distinct species that share a recent common ancestor but show little sexual interest in each other, resulting in sterile offspring."', '"BULLDOG AND SPANIEL":"Bulldog and spaniel are members of the same species, sharing the same DNA pool and indicating a group of related animals."', '"DONKEYS":"Donkeys are a distinct species that cannot produce fertile offspring with horses."', '"HORSES":"Horses are a distinct species that cannot produce fertile offspring with donkeys."', '"MULES":"Mules are the sterile offspring resulting from the mating of donkeys and horses."', '"BULLDOGS":"Bulldogs are a species that can interbreed with other species within the same genus, such as spaniels."', '"SPANIELS":"Spaniels are a species that can interbreed with other species within the same genus, such as bulldogs."', '"LIONS":"Lions are a species within the genus Panthera, which also includes tigers, leopards, and jaguars."', '"TIGERS":"Tigers are a species within the genus Panthera, which also includes lions, leopards, and jaguars."', '"LEOPARDS":"Leopards are a species within the genus Panthera, which also includes lions, tigers, and jaguars."', '"JAGUARS":"Jaguars are a species within the genus Panthera, which also includes lions, tigers, and leopards."', '"GENUS":"Genus is a category used by biologists to group organisms that have evolved from a common ancestor."']}
+04:36:59,591 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"THE BIG BANG":"The Big Bang is the name given to the event where matter, energy, time, and space came into being."', '"PHYSICS":"Physics is the study of matter, energy, time, and space, which came into being in the Big Bang."', '"CHEMISTRY":"Chemistry is the study of atoms and molecules, which came into being 300,000 years after the Big Bang."', '"BIOLOGY":"Biology is the study of organisms, which first appeared on Earth about 3.8 billion years ago."', '"HISTORY":"History refers to the development of human cultures, which started about 70,000 years ago."', '"EARTH":"Earth is the planet where life first appeared and where human cultures developed."', '"HOMO SAPIENS":Homo sapiens, also known as modern humans or simply Sapiens, is a species of the genus Homo and a member of the family of great apes. It is characterized by its large brain and high energy consumption at rest. Homo sapiens formed elaborate structures called cultures, leading to the development of history, and they are the species to which humans currently belong. As the species that includes wise men, Homo sapiens has kept a secret about its uncivilized cousins and former siblings. However, the future of Homo sapiens is uncertain, with experts suggesting that they may not survive for 2 million years, given the instability of their existence a thousand years from now.', '"COGNITIVE REVOLUTION":"The Cognitive Revolution is an event that started history about 70,000 years ago."', '"AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an event that sped up history about 12,000 years ago."', '"SCIENTIFIC REVOLUTION":"The Scientific Revolution is an event that may end history and start something completely different, getting underway only 500 years ago."', '"THE AGRICULTURAL REVOLUTION":"The Agricultural Revolution is an historical event that occurred approximately 12,000 years ago and significantly sped up human progress."', '"THE SCIENTIFIC REVOLUTION":"The Scientific Revolution is an historical event that began 500 years ago and may have marked the end of history and the beginning of something completely different."', '"HUMANS":Humans are a species that have been in existence for approximately 2.5 million years, characterized by intricate hand movements and tool production, an upright gait, and significant progress during the Agricultural and Scientific Revolutions. They are distinguished by their extraordinarily large brains compared to other animals, with an average brain size ranging from 1,200-1,400 cubic centimeters.', '"EAST AFRICA":East Africa is a geographical region that has been home to humans and other organisms for millions of years. It is specifically recognized as the "cradle of humanity," where human evolution continued, and new species emerged. More specifically, East Africa is identified as the original homeland of both Homo sapiens and Australopithecus.', '"MODERN HUMANS":"Modern humans are a species that first appeared approximately 2.5 million years ago and share similarities with other primates such as chimpanzees, baboons, and elephants."', '"LOCAL BEAUTY":"The local beauty refers to the appealing natural or man-made features of a place, indicating a geographical location."']}
+04:37:08,197 httpx INFO HTTP Request: POST http://localhost:1234/v1/embeddings "HTTP/1.1 200 OK"
+04:37:08,255 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 4 retries took 0.40000000002328306. input_tokens=451, output_tokens=0
+04:37:08,697 httpx INFO HTTP Request: POST http://localhost:1234/v1/embeddings "HTTP/1.1 200 OK"
+04:37:08,763 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 4 retries took 0.3690000000060536. input_tokens=665, output_tokens=0
+04:37:08,799 datashaper.workflow.workflow INFO executing verb drop
+04:37:08,815 datashaper.workflow.workflow INFO executing verb filter
+04:37:08,842 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_entities.parquet
+04:37:09,274 graphrag.index.run INFO Running workflow: create_final_nodes...
+04:37:09,276 graphrag.index.run INFO dependencies for create_final_nodes: ['create_base_entity_graph']
+04:37:09,276 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+04:37:09,321 datashaper.workflow.workflow INFO executing verb layout_graph
+04:37:09,346 datashaper.workflow.workflow INFO executing verb unpack_graph
+04:37:09,359 datashaper.workflow.workflow INFO executing verb unpack_graph
+04:37:09,372 datashaper.workflow.workflow INFO executing verb drop
+04:37:09,381 datashaper.workflow.workflow INFO executing verb filter
+04:37:09,404 datashaper.workflow.workflow INFO executing verb select
+04:37:09,416 datashaper.workflow.workflow INFO executing verb rename
+04:37:09,428 datashaper.workflow.workflow INFO executing verb convert
+04:37:09,474 datashaper.workflow.workflow INFO executing verb join
+04:37:09,492 datashaper.workflow.workflow INFO executing verb rename
+04:37:09,493 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_nodes.parquet
+04:37:09,697 graphrag.index.run INFO Running workflow: create_final_communities...
+04:37:09,697 graphrag.index.run INFO dependencies for create_final_communities: ['create_base_entity_graph']
+04:37:09,698 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+04:37:09,722 datashaper.workflow.workflow INFO executing verb unpack_graph
+04:37:09,735 datashaper.workflow.workflow INFO executing verb unpack_graph
+04:37:09,780 datashaper.workflow.workflow INFO executing verb aggregate_override
+04:37:09,797 datashaper.workflow.workflow INFO executing verb join
+04:37:09,812 datashaper.workflow.workflow INFO executing verb join
+04:37:09,828 datashaper.workflow.workflow INFO executing verb concat
+04:37:09,840 datashaper.workflow.workflow INFO executing verb filter
+04:37:09,868 datashaper.workflow.workflow INFO executing verb aggregate_override
+04:37:09,882 datashaper.workflow.workflow INFO executing verb join
+04:37:09,899 datashaper.workflow.workflow INFO executing verb filter
+04:37:09,928 datashaper.workflow.workflow INFO executing verb fill
+04:37:09,941 datashaper.workflow.workflow INFO executing verb merge
+04:37:09,956 datashaper.workflow.workflow INFO executing verb copy
+04:37:09,970 datashaper.workflow.workflow INFO executing verb select
+04:37:09,972 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_communities.parquet
+04:37:10,172 graphrag.index.run INFO Running workflow: join_text_units_to_entity_ids...
+04:37:10,173 graphrag.index.run INFO dependencies for join_text_units_to_entity_ids: ['create_final_entities']
+04:37:10,173 graphrag.index.run INFO read table from storage: create_final_entities.parquet
+04:37:10,206 datashaper.workflow.workflow INFO executing verb select
+04:37:10,220 datashaper.workflow.workflow INFO executing verb unroll
+04:37:10,237 datashaper.workflow.workflow INFO executing verb aggregate_override
+04:37:10,240 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table join_text_units_to_entity_ids.parquet
+04:37:10,440 graphrag.index.run INFO Running workflow: create_final_relationships...
+04:37:10,446 graphrag.index.run INFO dependencies for create_final_relationships: ['create_final_nodes', 'create_base_entity_graph']
+04:37:10,447 graphrag.index.run INFO read table from storage: create_final_nodes.parquet
+04:37:10,452 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+04:37:10,481 datashaper.workflow.workflow INFO executing verb unpack_graph
+04:37:10,498 datashaper.workflow.workflow INFO executing verb filter
+04:37:10,530 datashaper.workflow.workflow INFO executing verb rename
+04:37:10,545 datashaper.workflow.workflow INFO executing verb filter
+04:37:10,578 datashaper.workflow.workflow INFO executing verb drop
+04:37:10,593 datashaper.workflow.workflow INFO executing verb compute_edge_combined_degree
+04:37:10,612 datashaper.workflow.workflow INFO executing verb convert
+04:37:10,644 datashaper.workflow.workflow INFO executing verb convert
+04:37:10,646 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_relationships.parquet
+04:37:10,875 graphrag.index.run INFO Running workflow: join_text_units_to_relationship_ids...
+04:37:10,875 graphrag.index.run INFO dependencies for join_text_units_to_relationship_ids: ['create_final_relationships']
+04:37:10,876 graphrag.index.run INFO read table from storage: create_final_relationships.parquet
+04:37:10,911 datashaper.workflow.workflow INFO executing verb select
+04:37:10,928 datashaper.workflow.workflow INFO executing verb unroll
+04:37:10,945 datashaper.workflow.workflow INFO executing verb aggregate_override
+04:37:10,965 datashaper.workflow.workflow INFO executing verb select
+04:37:10,967 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table join_text_units_to_relationship_ids.parquet
+04:37:11,181 graphrag.index.run INFO Running workflow: create_final_community_reports...
+04:37:11,181 graphrag.index.run INFO dependencies for create_final_community_reports: ['create_final_nodes', 'create_final_relationships']
+04:37:11,181 graphrag.index.run INFO read table from storage: create_final_nodes.parquet
+04:37:11,185 graphrag.index.run INFO read table from storage: create_final_relationships.parquet
+04:37:11,221 datashaper.workflow.workflow INFO executing verb prepare_community_reports_nodes
+04:37:11,264 datashaper.workflow.workflow INFO executing verb prepare_community_reports_edges
+04:37:11,290 datashaper.workflow.workflow INFO executing verb restore_community_hierarchy
+04:37:11,312 datashaper.workflow.workflow INFO executing verb prepare_community_reports
+04:37:11,312 graphrag.index.verbs.graph.report.prepare_community_reports INFO Number of nodes at level=0 => 87
+04:37:11,361 datashaper.workflow.workflow INFO executing verb create_community_reports
+04:37:12,697 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:37:12,704 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 1.3119999999762513. input_tokens=2280, output_tokens=419
+04:37:13,2 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:37:13,4 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 1.6209999999846332. input_tokens=2553, output_tokens=563
+04:37:13,210 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:37:13,214 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 1.8260000000009313. input_tokens=2448, output_tokens=445
+04:37:13,447 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:37:13,449 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 2.0709999999962747. input_tokens=2814, output_tokens=576
+04:37:13,452 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+04:37:13,454 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 2.081000000005588. input_tokens=2106, output_tokens=379
+04:37:13,493 datashaper.workflow.workflow INFO executing verb window
+04:37:13,495 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_community_reports.parquet
+04:37:13,777 graphrag.index.run INFO Running workflow: create_final_text_units...
+04:37:13,777 graphrag.index.run INFO dependencies for create_final_text_units: ['join_text_units_to_entity_ids', 'create_base_text_units', 'join_text_units_to_relationship_ids']
+04:37:13,778 graphrag.index.run INFO read table from storage: join_text_units_to_entity_ids.parquet
+04:37:13,780 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+04:37:13,783 graphrag.index.run INFO read table from storage: join_text_units_to_relationship_ids.parquet
+04:37:13,822 datashaper.workflow.workflow INFO executing verb select
+04:37:13,841 datashaper.workflow.workflow INFO executing verb rename
+04:37:13,861 datashaper.workflow.workflow INFO executing verb join
+04:37:13,887 datashaper.workflow.workflow INFO executing verb join
+04:37:13,911 datashaper.workflow.workflow INFO executing verb aggregate_override
+04:37:13,933 datashaper.workflow.workflow INFO executing verb select
+04:37:13,935 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_text_units.parquet
+04:37:14,152 graphrag.index.run INFO Running workflow: create_base_documents...
+04:37:14,152 graphrag.index.run INFO dependencies for create_base_documents: ['create_final_text_units']
+04:37:14,152 graphrag.index.run INFO read table from storage: create_final_text_units.parquet
+04:37:14,195 datashaper.workflow.workflow INFO executing verb unroll
+04:37:14,216 datashaper.workflow.workflow INFO executing verb select
+04:37:14,237 datashaper.workflow.workflow INFO executing verb rename
+04:37:14,258 datashaper.workflow.workflow INFO executing verb join
+04:37:14,282 datashaper.workflow.workflow INFO executing verb aggregate_override
+04:37:14,304 datashaper.workflow.workflow INFO executing verb join
+04:37:14,330 datashaper.workflow.workflow INFO executing verb rename
+04:37:14,352 datashaper.workflow.workflow INFO executing verb convert
+04:37:14,376 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_documents.parquet
+04:37:14,589 graphrag.index.run INFO Running workflow: create_final_documents...
+04:37:14,595 graphrag.index.run INFO dependencies for create_final_documents: ['create_base_documents']
+04:37:14,605 graphrag.index.run INFO read table from storage: create_base_documents.parquet
+04:37:14,650 datashaper.workflow.workflow INFO executing verb rename
+04:37:14,651 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_documents.parquet

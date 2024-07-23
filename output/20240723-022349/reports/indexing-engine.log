@@ -1,0 +1,442 @@
+02:23:49,553 graphrag.config.read_dotenv INFO Loading pipeline .env file
+02:23:49,558 graphrag.index.cli INFO using default configuration: {
+    "llm": {
+        "api_key": "REDACTED, length 16",
+        "type": "openai_chat",
+        "model": "mixtral-8x7b-32768",
+        "max_tokens": 4000,
+        "request_timeout": 180.0,
+        "api_base": "https://api.groq.com/openai/v1",
+        "api_version": null,
+        "proxy": null,
+        "cognitive_services_endpoint": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 2,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 25
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": ".",
+    "reporting": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/reports",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/artifacts",
+        "storage_account_blob_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "REDACTED, length 56",
+            "type": "openai_embedding",
+            "model": "nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q4_K_M.gguf",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:1234/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": null,
+        "strategy": null
+    },
+    "chunks": {
+        "size": 300,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null
+    },
+    "snapshots": {
+        "graphml": false,
+        "raw_entities": false,
+        "top_level_nodes": false
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 16",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "REDACTED, length 16",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "REDACTED, length 16",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": null,
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 16",
+            "type": "openai_chat",
+            "model": "mixtral-8x7b-32768",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "https://api.groq.com/openai/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 2,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+02:23:49,560 graphrag.index.create_pipeline_config INFO skipping workflows 
+02:23:49,683 graphrag.index.run INFO Running pipeline
+02:23:49,684 graphrag.index.storage.file_pipeline_storage INFO Creating file storage at output/20240723-022349/artifacts
+02:23:49,684 graphrag.index.input.load_input INFO loading input from root_dir=input
+02:23:49,684 graphrag.index.input.load_input INFO using file storage for input
+02:23:49,685 graphrag.index.storage.file_pipeline_storage INFO search input for files matching .*\.txt$
+02:23:49,686 graphrag.index.input.text INFO found text files from input, found [('book.txt', {})]
+02:23:49,693 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_base_extracted_entities', 'create_summarized_entities', 'create_base_entity_graph', 'create_final_entities', 'create_final_nodes', 'create_final_communities', 'join_text_units_to_entity_ids', 'create_final_relationships', 'join_text_units_to_relationship_ids', 'create_final_community_reports', 'create_final_text_units', 'create_base_documents', 'create_final_documents']
+02:23:49,693 graphrag.index.run INFO Final # of rows loaded: 1
+02:23:49,859 graphrag.index.run INFO Running workflow: create_base_text_units...
+02:23:49,859 graphrag.index.run INFO dependencies for create_base_text_units: []
+02:23:49,863 datashaper.workflow.workflow INFO executing verb orderby
+02:23:49,872 datashaper.workflow.workflow INFO executing verb zip
+02:23:49,875 datashaper.workflow.workflow INFO executing verb aggregate_override
+02:23:49,883 datashaper.workflow.workflow INFO executing verb chunk
+02:23:50,64 datashaper.workflow.workflow INFO executing verb select
+02:23:50,70 datashaper.workflow.workflow INFO executing verb unroll
+02:23:50,78 datashaper.workflow.workflow INFO executing verb rename
+02:23:50,81 datashaper.workflow.workflow INFO executing verb genid
+02:23:50,85 datashaper.workflow.workflow INFO executing verb unzip
+02:23:50,89 datashaper.workflow.workflow INFO executing verb copy
+02:23:50,93 datashaper.workflow.workflow INFO executing verb filter
+02:23:50,104 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_text_units.parquet
+02:23:50,310 graphrag.index.run INFO Running workflow: create_base_extracted_entities...
+02:23:50,310 graphrag.index.run INFO dependencies for create_base_extracted_entities: ['create_base_text_units']
+02:23:50,311 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+02:23:50,350 datashaper.workflow.workflow INFO executing verb entity_extract
+02:23:50,353 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=https://api.groq.com/openai/v1
+02:23:50,401 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for mixtral-8x7b-32768: TPM=0, RPM=0
+02:23:50,402 graphrag.index.llm.load_llm INFO create concurrency limiter for mixtral-8x7b-32768: 25
+02:23:50,414 datashaper.workflow.workflow INFO executing verb merge_graphs
+02:23:50,420 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_extracted_entities.parquet
+02:23:50,603 graphrag.index.run INFO Running workflow: create_summarized_entities...
+02:23:50,607 graphrag.index.run INFO dependencies for create_summarized_entities: ['create_base_extracted_entities']
+02:23:50,608 graphrag.index.run INFO read table from storage: create_base_extracted_entities.parquet
+02:23:50,621 datashaper.workflow.workflow INFO executing verb summarize_descriptions
+02:23:50,815 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+02:23:50,821 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"YAXLEY\\""\nDescription List: ["\\"The other man who appears in the lane, has a blunt face, and speaks about a tricky task and the Dark Lord.\\">", "\\"Yaxley is a character assigned a seat beside Dolohov by Voldemort, possibly holding a significant role or relationship.\\"", "\\"Yaxley is a character who walks with Snape towards the drawing room, hesitates for a moment on the threshold, and eventually enters the room.\\"", "\\"Yaxley is a person mentioned in the text, arriving late to a meeting and seated beside Dolohov per Voldemort\'s instructions.\\""]\n#######\nOutput:\n'}
+02:23:50,822 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+02:23:50,822 datashaper.workflow.workflow ERROR Error executing verb "summarize_descriptions" in create_summarized_entities: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
+    result = await result
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 183, in summarize_descriptions
+    results = [
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 184, in <listcomp>
+    await get_resolved_entities(row, semaphore) for row in output.itertuples()
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 147, in get_resolved_entities
+    results = await asyncio.gather(*futures)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 167, in do_summarize_descriptions
+    results = await strategy_exec(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/strategies/graph_intelligence/run_graph_intelligence.py", line 34, in run
+    return await run_summarize_descriptions(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/strategies/graph_intelligence/run_graph_intelligence.py", line 67, in run_summarize_descriptions
+    result = await extractor(items=items, descriptions=descriptions)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/graph/extractors/summarize/description_summary_extractor.py", line 73, in __call__
+    result = await self._summarize_descriptions(items, descriptions)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/graph/extractors/summarize/description_summary_extractor.py", line 106, in _summarize_descriptions
+    result = await self._summarize_descriptions_with_llm(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/graph/extractors/summarize/description_summary_extractor.py", line 125, in _summarize_descriptions_with_llm
+    response = await self._llm(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/json_parsing_llm.py", line 34, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/openai_token_replacing_llm.py", line 37, in __call__
+    return await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/openai_history_tracking_llm.py", line 33, in __call__
+    output = await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/openai_chat_llm.py", line 55, in _execute_llm
+    completion = await self.client.chat.completions.create(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 1289, in create
+    return await self._post(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/_base_client.py", line 1519, in request
+    return await self._request(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/_base_client.py", line 1620, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+02:23:50,827 graphrag.index.reporting.file_workflow_callbacks INFO Error executing verb "summarize_descriptions" in create_summarized_entities: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}} details=None
+02:23:50,832 graphrag.index.run ERROR error running workflow create_summarized_entities
+Traceback (most recent call last):
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/run.py", line 323, in run_pipeline
+    result = await workflow.run(context, callbacks)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/datashaper/workflow/workflow.py", line 369, in run
+    timing = await self._execute_verb(node, context, callbacks)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
+    result = await result
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 183, in summarize_descriptions
+    results = [
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 184, in <listcomp>
+    await get_resolved_entities(row, semaphore) for row in output.itertuples()
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 147, in get_resolved_entities
+    results = await asyncio.gather(*futures)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/description_summarize.py", line 167, in do_summarize_descriptions
+    results = await strategy_exec(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/strategies/graph_intelligence/run_graph_intelligence.py", line 34, in run
+    return await run_summarize_descriptions(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/verbs/entities/summarize/strategies/graph_intelligence/run_graph_intelligence.py", line 67, in run_summarize_descriptions
+    result = await extractor(items=items, descriptions=descriptions)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/graph/extractors/summarize/description_summary_extractor.py", line 73, in __call__
+    result = await self._summarize_descriptions(items, descriptions)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/graph/extractors/summarize/description_summary_extractor.py", line 106, in _summarize_descriptions
+    result = await self._summarize_descriptions_with_llm(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/index/graph/extractors/summarize/description_summary_extractor.py", line 125, in _summarize_descriptions_with_llm
+    response = await self._llm(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/json_parsing_llm.py", line 34, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/openai_token_replacing_llm.py", line 37, in __call__
+    return await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/openai_history_tracking_llm.py", line 33, in __call__
+    output = await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/base/base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/graphrag/llm/openai/openai_chat_llm.py", line 55, in _execute_llm
+    completion = await self.client.chat.completions.create(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 1289, in create
+    return await self._post(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/_base_client.py", line 1519, in request
+    return await self._request(
+  File "/Users/arham/anaconda3/envs/DataScience/lib/python3.10/site-packages/openai/_base_client.py", line 1620, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+02:23:50,833 graphrag.index.reporting.file_workflow_callbacks INFO Error running pipeline! details=None
+02:23:50,844 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: ["\\"YAXLEY\\"", "\\"DOLOHOV\\""]\nDescription List: ["\\"Yaxley is assigned a seat beside Dolohov by Voldemort, indicating a possible relationship or role.\\"", "\\"Yaxley is seated next to Dolohov at the meeting.\\""]\n#######\nOutput:\n'}
+02:23:50,845 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+02:23:50,846 httpx INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+02:23:50,846 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"VOLDEMORT\\""\nDescription List: ["\\"Voldemort is a character who assigns seats to Severus and Yaxley, demonstrating leadership or authority.\\"", "\\"Voldemort is a person mentioned in the text, hosting a meeting and addressing Snape and Yaxley.\\""]\n#######\nOutput:\n'}
+02:23:50,847 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': '\nYou are a helpful assistant responsible for generating a comprehensive summary of the data provided below.\nGiven one or two entities, and a list of descriptions, all related to the same entity or group of entities.\nPlease concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.\nIf the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.\nMake sure it is written in third person, and include the entity names so we the have full context.\n\n#######\n-Data-\nEntities: "\\"DOLOHOV\\""\nDescription List: ["\\"Dolohov is a character mentioned in relation to Yaxley, possibly holding a significant role or relationship.\\"", "\\"Dolohov is a person mentioned in the text, present at the meeting and seated next to Yaxley.\\""]\n#######\nOutput:\n'}
