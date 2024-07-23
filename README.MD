@@ -261,5 +261,4 @@ GraphRAG enhances the quality of responses by extracting additional entities and
    LIMIT 50;
 
 ## Conclusion
-By following this guide, you can set up and utilize GraphRAG to its full potential, creating and exploring complex graph data locally. This powerful tool combined with Neo4j offers a robust platform for data visualization and analysis, ideal for impressing recruiters and showcasing your technical skills.
-# GraphRAG-Local-Implementation-With-Neo4j-Integeration
+By following this guide, you can set up and utilize GraphRAG to its full potential, creating and exploring complex graph data locally. This powerful tool combined with Neo4j offers a robust platform for data visualization and analysis
