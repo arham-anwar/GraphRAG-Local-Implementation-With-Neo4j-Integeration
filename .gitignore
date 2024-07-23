@@ -1,0 +1,4 @@
+/neo4j-community-5.21.2/
+/.env
+/csvoutput/
+/cache/
