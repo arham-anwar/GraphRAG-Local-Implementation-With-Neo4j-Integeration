@@ -1,5 +1,8 @@
 # GRAPHRAG: 100% Free and Local Implementation with Graph Representation on Neo4j
 
+![GraphRAG](./GraphRAG.gif)
+
+
 ## Introduction to GraphRAG, Neo4j, and Groq
 
 This guide introduces GraphRAG, a powerful tool released by Microsoft for graph representation and visualization using Neo4j. We'll explore how to leverage GraphRAG's capabilities to extract high-quality responses, integrate with Groq for enhanced language model performance, and visualize data relationships using Neo4j. By the end of this guide, you'll understand the theory behind GraphRAG, its prompts, and the practical steps to set it up and use it effectively.
